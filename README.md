@@ -6,11 +6,11 @@ Interlingua (ISO 639 language codes ia, ina) is a naturalistic planned Italic in
 
 The goal of the Interlingua Corpus Project is to aggregate a large collection of Interlingua sentences as a community resource. The sentences in this corpus, including matched pairs of Interlingua-English sentences, are automatically collected from public websites and documents using a web crawler. The emphasis of this project is on sentences because sentences provide vocabulary in context and represent the grammar as used in various styles of writing. This collection of Interlingua sentences will provide a foundation for a variety of uses including enumeration of Interlingua's core vocabulary and development of comprehensive frequency dictionaries for language learners, corpus linguistics studies, and for the development of computational linguistics resources such as language models and machine translation tools for Interlingua.
 
-Interlingua Corpus Release 1.0: COMING SOON
-Release Notes
-Interlingua Sentences
-Interlingua Word Frequency List
-Interlingua-English Parallel Sentences
+Interlingua Corpus Release 1.0: COMING SOON<br />
+Release Notes<br />
+Interlingua Sentences<br />
+Interlingua Word Frequency List<br />
+Interlingua-English Parallel Sentences<br />
 Please email interlinguacorpus@gmail.com for questions and suggestions.
 
 # How to use the Python Files
@@ -21,6 +21,6 @@ Note: The language model 8_lang_50k_model.bin is not included.
 
 The other notable python files are:
 
-QC_INA_sentences.py - Does a quick quality control of the extracted interlingua sentences.
-removeBad.py (in 4_bibles) - Does a quality control of the extracted parallel sentences.
+QC_INA_sentences.py - Does a quick quality control of the extracted interlingua sentences.<br />
+removeBad.py (in 4_bibles) - Does a quality control of the extracted parallel sentences.<br />
 
