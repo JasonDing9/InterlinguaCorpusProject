@@ -1,4 +1,3 @@
-import urllib.request
 from urllib.request import urlopen, urlretrieve
 import bs4 as bs
 from bs4 import NavigableString, Tag
@@ -6,31 +5,21 @@ import sys
 import time
 import io, re
 import fasttext
-import pdfplumber
-import requests
-import PyPDF2
 import fitz
 import operator
-import traceback
 from collections import OrderedDict
 import signal
 from difflib import SequenceMatcher
 import os
 from os.path import isfile, join
 from os import listdir
-import lxml.html
 from operator import itemgetter
 
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
-from io import StringIO
 
-class TimeoutException(Exception):   # Custom exception class
+class TimeoutException(Exception):
     pass
 
-def timeout_handler(signum, frame):   # Custom signal handler
+def timeout_handler(signum, frame):
     raise TimeoutException
 
 def get_html(link_url):
@@ -45,6 +34,17 @@ def get_soup(url):
     return soup
 
 def get_paragraphs(soup):
+    """
+    Use this on a BeautifulSoup's soup (use the get_soup function on a url to get it's soup) 
+    in order to get the paragraphs from a url. Returns the texts in a paragraph in a list.
+    
+    Inputs:
+    soup - Should be the "soup" of the url. Use get_soup to get the soup of the url.
+    
+    Outputs:
+    Each paragraph's texts in a list
+    """
+
     texts = []
     newline = ["\r\n", "\r", "\n"]
     for p in soup.findAll('p'):
@@ -72,13 +72,13 @@ def get_paragraphs(soup):
         text = ""
         for child in p:
             if isinstance(child, NavigableString):
-                add = str(child)
+                add = " " + str(child) + " "
                 for line in newline:
                     add = add.replace(line, " ")
                 text += add
             elif isinstance(child, Tag):
                 if child.name != 'br':
-                    add = child.text
+                    add = " " + child.text + " "
                     for line in newline:
                         add = add.replace(line, " ")
                     text += add
@@ -93,13 +93,13 @@ def get_paragraphs(soup):
         text = ""
         for child in p:
             if isinstance(child, NavigableString):
-                add = str(child)
+                add = " " + str(child) + " "
                 for line in newline:
                     add = add.replace(line, " ")
                 text += add
             elif isinstance(child, Tag):
                 if child.name != 'br':
-                    add = child.text
+                    add = " " + child.text + " "
                     for line in newline:
                         add = add.replace(line, " ")
                     text += add
@@ -110,18 +110,80 @@ def get_paragraphs(soup):
         for sen in result:
             texts.append(sen)
 
+    for p in soup.find_all('tr'):
+        text = ""
+        for child in p:
+            if isinstance(child, NavigableString):
+                add = " " + str(child) + " "
+                for line in newline:
+                    add = add.replace(line, " ")
+                text += add
+            elif isinstance(child, Tag):
+                if child.name != 'br':
+                    add = " " + child.text + " "
+                    for line in newline:
+                        add = add.replace(line, " ")
+                    text += add
+                else:
+                    text += '\n'
+
+        result = text.strip().split('\n')
+        for sen in result:
+            texts.append(sen)
+
+    for p in soup.find_all('td'):
+        text = ""
+        for child in p:
+            if isinstance(child, NavigableString):
+                add = " " + str(child) + " "
+                for line in newline:
+                    add = add.replace(line, " ")
+                text += add
+            elif isinstance(child, Tag):
+                if child.name != 'br':
+                    add = " " + child.text + " "
+                    for line in newline:
+                        add = add.replace(line, " ")
+                    text += add
+                else:
+                    text += '\n'
+
+        result = text.strip().split('\n')
+        for sen in result:
+            texts.append(sen)
+
+    # for text in texts:
+    #     print(text)
+    #     print("=========================")
     return texts
 
 
-def extract_sentences(fraction, texts):
+def extract_sentences(fraction, texts, allow_lower_case_start = False, allow_number_start = False, min = 0.3):
+    """
+    Extracts the interlingua and non-interlingua sentences from a block of text
+    
+    Inputs:
+    fraction - Used to determin if a block of text is mainly interlingua. If the fraction of Interlingua senteces to total sentences in the block of text is greater ot equal than variable fraction, then function extract_sentences' 3rd output is True. Otherwise, the 3rd output is false.
+    texts - A list of texts that you wish to extract sentences from
+    allow_lower_case_start - If this is set to True, then it will detect sentences that start with a lower case letter. If set to false, all detected sentences will start with an upper case letter. Default is False.
+    allow_lower_case_start - If this is set to True, then it will detect sentences that start with a number. If set to false, all detected sentences will not start with a letter. Default is False.
+    min - The minimum confidence value given by the interlingua-detection model in order to consider the sentence to be an interlingua sentence. Default is 0.3
+    
+    Outputs:
+    Output 1 - A list of the Interlingua senteces that are in variable texts. Any "Interlingua" sentences that had a value less than min from the Interlingua-detection model are not included in this list
+    Output 2 - A list of the non-Interlingua senteces that are in variable texts.
+    Output 3 - True if the fraction of Interlingua sentences is greater than or equal to variable fraction. Otherwise, return False
+    Output 4 - A list of all senteces the sentences in text (a combination of output 1 and 2)
+    """
+    
     spaces = [" ", "\u00A0"]
     newline = ["\r\n", "\r", "\n"]
     punctuation = [".", "!", "?"]
     abbreviations = ["i.a.", "i. a.", "i.e.", "i. e.", "p.ex.", "p. ex.", "sr.", "sra.", "srta.", "a.i.", "a. i.",
-                     "etc.", ".html", ".com", "...", "Dr.", "Mrs.", "Mr.", "Ms.", "pp."]
+                     "etc.", ".html", ".com", ".org", ".net", ".int", ".edu", ".gov", ".mil",".rice", ".onet", ".se", ".pl",
+                     "...", "Dr.", "Mrs.", "Mr.", "Ms.", "pp."]
     websites = ["com", "org", "net", "int", "edu", "gov", "mil","rice", "onet", "se", "pl"]
-    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
-                "u", "v", "w", "x", "y", "z", "\"", "\'", "‘"]
+    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "\"", "\'", "‘"]
     quotes = ["\"", "\'", "‘","’"]
     sentences = []
     for text in texts:
@@ -139,19 +201,7 @@ def extract_sentences(fraction, texts):
         while i < len(sentence_ends):  # looking at all period locations
             interrupt = 0
             if len(sentence_ends) > 0 and sentence_ends[i] >= 3 and text[sentence_ends[i] - 3:sentence_ends[i]+1] == "www.":  # check if period is part of a link
-                while True:
-                    for webend in websites:
-                        if sentence_ends[i] < len(text) - 1 - len(webend) and text[sentence_ends[i] + 1:sentence_ends[
-                                                                                                        i] + 1 + len(webend)] == webend:
-                            interrupt = 1
-                            break
-                        i = i + 1
-                        if i == len(sentence_ends):
-                            i = i-1
-                            breakx = 1
-                            break
-                    if(interrupt == 1 or breakx == 1):
-                        break
+                interrupt = 1
 
             if sentence_ends[i]+1<len(text) and text[sentence_ends[i]+1] not in quotes and text[sentence_ends[i]+1] != " ":
                                                                                    # if there is a character after the punctuation,
@@ -177,7 +227,8 @@ def extract_sentences(fraction, texts):
                     break
 
             if interrupt == 0:
-                if text[start].isupper() or text[start].islower() or text[start].isdigit() or (text[start] in quotes):  # check if the first letter of the sentence is a letter / quotation
+                if text[start].isupper() or (text[start].islower() and allow_lower_case_start) or (text[start].isdigit() and allow_number_start) \
+                        or (text[start] in quotes):  # check if the first letter of the sentence is a letter / quotation
                     if sentence_ends[i] + 1 < len(text) and \
                             (text[sentence_ends[i] + 1] in quotes):
                         sentences.append(text[start:sentence_ends[i] + 2])
@@ -202,14 +253,14 @@ def extract_sentences(fraction, texts):
 
             i = i + 1
     i = 0
-    # while i < len(sentences):
-    #     if len(sentences[i].split()) <= 2 and len(sentences[i]) <= 5:  # If a "sentence" has 2 or less words and less
-    #                                                                    # than or equal to 5 chars, delete it
-    #         sentences.remove(sentences[i])
-    #         i = i - 1
-    #     i = i + 1
+    while i < len(sentences):
+        if len(sentences[i].split()) <= 2 and len(sentences[i]) <= 5:  # If a "sentence" has 2 or less words and less
+                                                                       # than or equal to 5 chars, delete it
+            sentences.remove(sentences[i])
+            i = i - 1
+        i = i + 1
 
-    output = findAndSeperateLanguage(sentences, fraction, "__label__INA")
+    output = findAndSeperateLanguage(sentences, fraction, "__label__INA", min)
     # if(output[0]):
     #     return output[1], output[2]
     # else:
@@ -223,19 +274,36 @@ def findLanguage(sentences, fraction, language_lable):
             count  = count + 1
     return len(sentences)*fraction + 1 <= count
 
-def findAndSeperateLanguage(sentences, fraction, language_lable):
+def findAndSeperateLanguage(sentences, fraction, language_lable, min = 0.3):
+    """
+    Used in extract_sentences
+    """
+    
     count = 0
     INA = []
     nonINA = []
     for sentence in sentences:
         if model.predict(sentence)[0][0] == language_lable:
-            count  = count + 1
-            INA.append(sentence + " || " + model.predict(sentence).__str__())
+            if model.predict(sentence)[1][0] >= min:
+                count  = count + 1
+                INA.append(sentence + " || " + model.predict(sentence).__str__())
         else:
-            nonINA.append(sentence + " || " +  model.predict(sentence).__str__())
+            if model.predict(sentence)[1][0] >= min:
+                nonINA.append(sentence + " || " +  model.predict(sentence).__str__())
     return len(sentences)*fraction + 1 <= count, INA, nonINA
 
 def get_links(soup, original_link):
+    """
+    Finds all of the links on a website
+    
+    Inputs:
+    soup - the soup of the url (use get_soup)
+    original_link - the url of the page
+    
+    Output:
+    A list of all of the links
+    """
+    
     links = []
     for link in soup.findAll('a', href=True):
         text = link['href']
@@ -248,6 +316,16 @@ def get_links(soup, original_link):
 
 
 def get_link_root(link):
+    """
+    Gets the root of a url
+    
+    Inputs:
+    link - the url of the page
+    
+    Output:
+    Returns the root of the link if it can fint it. Otherwise, returns -1.
+    """
+    
     websites = ["com", "org", "net", "int", "edu", "gov", "mil"]
     for extension in websites:
         index = link.find(extension)
@@ -266,60 +344,102 @@ def load_vectors(fname):
     return data
 
 
-def checkForLanguage(lable, fraction, soup):
+def checkForLanguage(lable, fraction, soup, min = 0.9):
+    """
+    Used to check if a page is writting in a language. Considers the title, spans, divs, headers, anchors, and paragraphs of the website.
+    
+    Inputs:
+    lable - String of the lable of the language you want to check for
+    fraction - The minimum threshhold for the fraction of the total sentences that in the language in order for the website to be considered to be written in that language
+    soup - The soup of the website
+    min - The minimum confidence value given by the interlingua-detection model in order to consider the sentence to be an interlingua sentence. Default is 0.3
+    
+    Output:
+    True if the website is condered to be variable lable's language. Otherwise, return false
+    """
+    
     print()
     print("Checking if page is " + lable)
     valid = 0
     count = 0
     total_count = 0
     for p in soup.findAll('p'):
-        if model.predict(p.getText().replace("\n",""))[0][0] == lable:
-            count = count + 1
-        total_count = total_count + 1
-    if total_count == 0:
-        valid = valid + 0.5
-    elif total_count * fraction <= count:
-        valid = valid + 1
-    print("paragraph", count, total_count)
-
-    count = 0
-    total_count = 0
-    for a in soup.findAll('a'):
-        if len(a.getText()) > 3:
-            if model.predict(a.getText().replace("\n",""))[0][0] == lable:
+        if model.predict(p.getText().replace("\n",""))[1][0] >= min:
+            if model.predict(p.getText().replace("\n",""))[0][0] == lable:
                 count = count + 1
             total_count = total_count + 1
     if total_count == 0:
         valid = valid + 0.5
     elif total_count * fraction <= count:
-        valid = valid + 1
+        valid = valid + 1.5
+    print("paragraph", count, total_count)
+
+    count = 0
+    total_count = 0
+    for p in soup.findAll('span'):
+        if model.predict(p.getText().replace("\n",""))[1][0] >= min:
+            if model.predict(p.getText().replace("\n",""))[0][0] == lable:
+                count = count + 1
+            total_count = total_count + 1
+    if total_count == 0:
+        valid = valid + 0.5
+    elif total_count * fraction <= count:
+        valid = valid + 1.5
+    print("span", count, total_count)
+
+    count = 0
+    total_count = 0
+    for p in soup.findAll('div'):
+        if model.predict(p.getText().replace("\n",""))[1][0] >= min:
+            if model.predict(p.getText().replace("\n",""))[0][0] == lable:
+                count = count + 1
+            total_count = total_count + 1
+    if total_count == 0:
+        valid = valid + 0.5
+    elif total_count * fraction <= count:
+        valid = valid + 1.5
+    print("div", count, total_count)
+
+    count = 0
+    total_count = 0
+    for a in soup.findAll('a'):
+        if len(a.getText()) > 3:
+            if model.predict(a.getText().replace("\n",""))[1][0] >= min:
+                if model.predict(a.getText().replace("\n",""))[0][0] == lable:
+                    count = count + 1
+                total_count = total_count + 1
+    if total_count == 0:
+        valid = valid + 0.5
+    elif total_count * fraction <= count:
+        valid = valid + 1.5
     print("anchor", count, total_count)
 
     count = 0
     total_count = 0
     for h in soup.find_all(re.compile('^h[1-6]$')):
-        if model.predict(h.getText().replace("\n",""))[0][0] == lable:
-            count = count + 1
-        total_count = total_count + 1
+        if model.predict(h.getText().replace("\n",""))[1][0] >= min:
+            if model.predict(h.getText().replace("\n",""))[0][0] == lable:
+                count = count + 1
+            total_count = total_count + 1
     if total_count == 0:
         valid = valid + 0.5
     elif total_count * fraction <= count:
-        valid = valid + 1
+        valid = valid + 1.5
     print("heading", count, total_count)
 
     title = soup.find('title')
     try:
-        if (model.predict(title.getText())[0][0] == lable and model.predict(title.getText())[1][0] >= 0.95):
-            valid = valid + 1
+        if (model.predict(title.getText())[0][0] == lable and model.predict(title.getText())[1][0] >= min):
+            valid = valid + 1.5
             print("Title is INA")
-        elif title.getText().lower().find("interlingua")!=-1:
-            valid = valid + 1
+        elif title.getText().lower().find("interlingua")!=-1 or title.getText().lower().find("le encyclopedia libere")!=-1:
+            valid = valid + 1.5
             print("Title contains interlingua")
 
         elif title.getText().lower().find("wiki")!=-1 and \
                         model.predict(title.getText())[0][0] == lable and model.predict(title.getText())[1][0] >= 0.5:
             print("Title is wiki INA")
-            valid = valid + 1
+            valid = valid + 1.5
         else:
             print("Title:", model.predict(title.getText())[0][0], model.predict(title.getText())[1][0])
             print("Title not INA:", title.getText())
@@ -328,16 +448,16 @@ def checkForLanguage(lable, fraction, soup):
 
 
 
-    print("Valid value (>=2):",  valid)
+    print("Valid value (>=3):",  valid)
     print()
 
-    if valid >= 2:
+    if valid >= 3:
         return True
     else:
         return False
 
 
-def fonts(doc, granularity=False):
+def fonts(doc, granularity=False):  # thanks to https://towardsdatascience.com/extracting-headers-and-paragraphs-from-pdf-using-pymupdf-676e8421c467
     """Extracts fonts and their usage in PDF documents.
     :param doc: PDF document to iterate through
     :type doc: <class 'fitz.fitz.Document'>
@@ -373,7 +493,7 @@ def fonts(doc, granularity=False):
     return font_counts, styles
 
 
-def font_tags(font_counts, styles):
+def font_tags(font_counts, styles):  # thanks to https://towardsdatascience.com/extracting-headers-and-paragraphs-from-pdf-using-pymupdf-676e8421c467
     """Returns dictionary with font sizes as keys and tags as value.
     :param font_counts: (font_size, count) for all fonts occuring in document
     :type font_counts: list
@@ -407,7 +527,7 @@ def font_tags(font_counts, styles):
     return size_tag
 
 
-def headers_para(doc, size_tag):
+def headers_para(doc, size_tag):  # thanks to https://towardsdatascience.com/extracting-headers-and-paragraphs-from-pdf-using-pymupdf-676e8421c467
     """Scrapes headers & paragraphs from PDF and return texts with element tags.
     :param doc: PDF document to iterate through
     :type doc: <class 'fitz.fitz.Document'>
@@ -462,6 +582,17 @@ def headers_para(doc, size_tag):
 
 
 def get_pdf_text(url, is_url=True):
+    """
+    Used to get the paragraph text out of a pdf.
+    
+    Inputs:
+    url - The url of the pdf or the name of the pdf in the same directory
+    is_url - If the pdf is from a url, this should be True. If it's a pdf in your directory, this should be False. Deafult is True.
+    
+    Output:
+    A list of each paragraph in the pdf.
+    """
+    
     out = []
     if is_url:
         urlretrieve(url, 'temp.pdf')
@@ -491,6 +622,18 @@ def get_pdf_text(url, is_url=True):
 
 
 def text_from_txt(url, is_url=True):
+    """
+    Used to get the text out of a txt file.
+    
+    Inputs:
+    url - The url of the txt file or the name of the txt file in the same directory
+    is_url - If the txt file is from a url, this should be True. If it's a txt file in your directory, this should be False. Deafult is True.
+    
+    Output:
+    A list of each paragraph in the txt file.
+    """
+    
+    continuation = ["-\r\n","-\r","-\n"]
     linebreaks = ["\r\n","\r","\n"]
     if is_url:
         source = urlopen(url)
@@ -505,9 +648,13 @@ def text_from_txt(url, is_url=True):
                     lines.append(text)
                 text = ""
             else:
+                for cont in continuation:
+                    line = line.replace(cont, "")
+
                 for breaks in linebreaks:
                     line = line.replace(breaks, " ")
                 text += line
+        lines.append(text)
         return lines
     else:
         file = open(url, "r")
@@ -521,12 +668,25 @@ def text_from_txt(url, is_url=True):
                     lines.append(text)
                 text = ""
             else:
+                for cont in continuation:
+                    line = line.replace(cont, "")
                 for breaks in linebreaks:
                     line = line.replace(breaks, " ")
                 text += line
+        lines.append(text)
         return lines
 
 def remove_duplicates(file):
+    """
+    Removes any duplicate/identical lines in a file
+    
+    Inputs:
+    file - The name of the file. Should be in the same directory.
+    
+    Output:
+    Void
+    """
+    
     open_file = open(file, "r")
     file_elements = open_file.readlines()
     file_elements = list(OrderedDict.fromkeys(file_elements))
@@ -537,7 +697,16 @@ def remove_duplicates(file):
         write_file.write(line)
     write_file.close()
 
-def get_special_chars(text):  # get chars that are not letters or spaces (keeps order)
+def get_special_chars(text):  
+    """
+    Gets the chars in a string that are not letters or spaces (keeps the order)
+    
+    Inputs:
+    text - The string you want to get the special characters of
+    
+    Output:
+    A string of the special characters of the text
+    """
     chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
                 "u", "v", "w", "x", "y", "z", " ", "\u00AD", "\u002D", "\u05BE", "\u2010", "\u2011", "\u2012", "\u2013",
              "\u2014", "\u2015", "’","]",")", "[", "("]
@@ -545,6 +714,17 @@ def get_special_chars(text):  # get chars that are not letters or spaces (keeps 
     return ''.join(char for char in text.lower() if char not in chars)
 
 def check_if_two_passages_are_translations(INA_line, NON_line):
+    """
+    Checks if an Interlingua and an English are translations of each other. Should only be used if you are already quiet certain that the two are translations and use this as way to recheck. Will detect if two sentences are not translations, but may give some false positives if used incorrectly.
+    
+    Inputs:
+    INA_line - String of the Interlingua sentence
+    NON_line - String of the English sentence
+    
+    Output:
+    Return True if the sentences are translations of each other. Otherwise, returns false.
+    """
+    
     INA_line = INA_line.lower()
     NON_line = NON_line.lower()
     chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
@@ -560,6 +740,7 @@ def check_if_two_passages_are_translations(INA_line, NON_line):
 
 
 def find_similar_string(array, string, start, decimal):
+    
     for i in range(len(array)-start):
         if SequenceMatcher(None,array[start+i], string).ratio() >= decimal:
             return start+i
@@ -567,7 +748,19 @@ def find_similar_string(array, string, start, decimal):
 
 
 def parallel_texts(array_one, array_two, sureness_value = 3, percent_check = 0.8):
-
+    """
+    Given two passages in different languages that are translations of each other, tries to get the parallel senteces between the two passages.
+    
+    Inputs:
+    array_one - A list of each sentence of the passage in one language
+    array_two - A list of each sentence of the passage in another language
+    sureness_value - How sure you want to be that two sentences are a translation of each other. Default is 3
+    percent_check - How similar must the two sentences be in order to be considered translation of each other. Default is 0.8
+    
+    Output:
+    A list of pairs of translated sentences
+    """
+    
     counter_one = 0
     counter_two = 0
 
@@ -623,73 +816,89 @@ def parallel_texts(array_one, array_two, sureness_value = 3, percent_check = 0.8
 
     return out
 
+def parallel_verses(ENG_lines, INA_lines):
+    """
+    Finds the parallel verses of two texts. Used on passages that use verses. E.g. the Bible
+    
+    Inputs:
+    ENG_lines - A list of the English sentences
+    INA_lines - A list of the Interlingua sentences
+    
+    Output:
+    A list of pairs of translated sentences
+    """
+    
+    out = []
+    for INA_line in INA_lines:
+        first_colon = INA_line.find(":")
+        if first_colon != -1 and INA_line[first_colon-1].isdigit() and INA_line[first_colon+1].isdigit:
+            start = first_colon - 1
+            while start >= 0:
+                if not INA_line[start].isdigit():
+                    break
+                start = start - 1
+            start = start + 1
 
+            end = first_colon + 1
+            while end < len(INA_line):
+                if not INA_line[end].isdigit():
+                    break
+                end = end + 1
 
+            verse_number = INA_line[start:end]
 
-def translation(file_ENG, file_INA, sureness_value = 3, passages = True, percent_check = 0.8):
-    if(file_INA.find(".txt")!=-1):
-        INA_lines = text_from_txt(file_INA,False)
-        if not passages:
-            INA_lines = [" ".join(INA_lines)]
-            INA_lines = extract_sentences(0.3, INA_lines)[3]
-    elif(file_INA.find(".pdf")!=-1):
-        INA_lines = get_pdf_text(file_INA, False)
-        if not passages:
-            INA_lines = [" ".join(INA_lines)]
-            INA_lines = extract_sentences(0.3, INA_lines)[3]
-    elif (file_INA.find(".html")!=-1):
-        soup = get_soup(file_INA)
-        INA_lines = get_paragraphs(soup)
-        if not passages:
-            INA_lines = [" ".join(INA_lines)]
-            INA_lines = extract_sentences(0.3, INA_lines)[3]
-    else:
-        return -1
+            for ENG_line in ENG_lines:
+                if ENG_line.find(verse_number) != -1:
+                    out.append([ENG_line, INA_line])
+                    break
+    return out
 
-    if(file_ENG.find(".txt")!=-1):
-        ENG_lines = text_from_txt(file_ENG, False)
-        if not passages:
-            ENG_lines = [" ".join(ENG_lines)]
-            ENG_lines = extract_sentences(0.3, ENG_lines)[3]
-    elif(file_ENG.find(".pdf")!=-1):
-        ENG_lines = get_pdf_text(file_ENG, False)
-        if not passages:
-            ENG_lines = [" ".join(ENG_lines)]
-            ENG_lines = extract_sentences(0.3, ENG_lines)[3]
-    elif (file_ENG.find(".html")!=-1):
-        soup = get_soup(file_ENG)
-        ENG_lines = get_paragraphs(soup)
-        if not passages:
-            ENG_lines = [" ".join(ENG_lines)]
-            ENG_lines = extract_sentences(0.3, ENG_lines)[3]
-    else:
-        return -2
-
-    ###print(INA_lines)
-    ###print(ENG_lines)
+def translation(ENG_lines, INA_lines, sureness_value = 3, percent_check = 0.8):
+    """
+    Given two passages in different languages that are translations of each other, tries to get the parallel senteces between the two passages.
+    
+    Inputs:
+    array_one - A list of each paragraph of the passage in one language
+    array_two - A list of each paragraph of the passage in another language
+    sureness_value - How sure you want to be that two sentences are a translation of each other. Default is 3
+    percent_check - How similar must the two sentences be in order to be considered translation of each other. Default is 0.8
+    
+    Output:
+    A list of pairs of translated sentences
+    """
+    
     parallel_passages = parallel_texts(ENG_lines, INA_lines, sureness_value, percent_check)
-    ###print("Length:", len(parallel_passages))
     count = 0
     out = []
 
     for parallel_passage in parallel_passages:
-        ###print(parallel_passage[0], parallel_passage[1])
-        ###print(parallel_passage[0])
-        ###print(parallel_passage[1])
         sentences_ENG = extract_sentences(0.3,[parallel_passage[0]])[3];
         sentences_INA = extract_sentences(0.3,[parallel_passage[1]])[3];
-        ###print(sentences_ENG)
-        ###print(sentences_INA)
+
         parallel_sentences = parallel_texts(sentences_ENG,sentences_INA, sureness_value, percent_check)
         for sentence_pair in parallel_sentences:
-            # print("[ENG]", sentence_pair[0])
-            # print("[INA]", sentence_pair[1])
-            # print("")
             out.append(sentence_pair)
     return out
 
 
-def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, only_ia_wiki = False):
+def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, only_ia_wiki = False, remove_all_query_urls = True):
+    """
+    A webcrawler that will crawl and store any Interlingua sentences it finds.
+    
+    Files:
+    traversed_links.txt - Stores what links the crawler has traversed so far
+    link_queue.txt - The queue of links the crawler wishes to crawl in the future
+    sentencesINA.txt - Stores all of the Interlingua sentences the crawlers finds
+    sentencesNonINA.txt - Stores all of the non-Interlingua sentences the crawler finds
+    failedWebsites.txt - Websites that either took too long to load or was given an error
+    failedWebsites.txt - Stores the number of each url type the crawler has been to (.com, .org, .pdf, etc)
+    
+    Inputs:
+    number_of_iterations - Number of times you want to run the crawler
+    number_of_links_per_iteration - Number of links you want to go threw per iteration
+    percent - Used for the variable fraction in extract_sentences and variable fraction in checkForLanguage
+    """
+    
     signal.signal(signal.SIGALRM, timeout_handler)
 
     for j in range(number_of_iterations):
@@ -741,18 +950,29 @@ def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, 
                     signal.alarm(30)
                     traversed_links.add(url)
 
-                    bad_links = ["action=edit", "&oldid", "&mobileaction=","upload.wikimedia.org", "&returnto=", "&section=", "Special:","&diff","File:", "#cite_ref","#cite_ref-ref", ".mp3"]
+                    bad_links = ["action=edit", "&oldid", "&mobileaction=","upload.wikimedia.org", "&returnto=", "&section=", "Special:","&diff","File:", "#cite_ref","#cite_ref-ref", ".mp3","peoplescheck", "tennis.com", "thegymter.net", "www.mindat.org","24h.md",".ro/", "ziare.com"]
                     bad_wiki_parts = ["?","&","="]
 
                     is_bad_link = 0
+
+                    if(url.find(".m.wikipedia")!=-1):
+                        is_bad_link = 1
+                        link_queue.append(url.replace(".m.wikipedia",".wikipedia",1) + "\n")
+
                     for bad_link in bad_links:
                         if(url.find(bad_link)!=-1):
                             is_bad_link = 1
-                        if(only_ia_wiki and url.find("wiki")!=-1 and (url.find("//ia.")==-1 and url.find("interlingua")==-1)):
+                        if(only_ia_wiki and (url.find("wikipedia")!=-1 or url.find("wiktionary")!=-1) and (url.lower().find("//ia.")==-1 and url.lower().find("interlingua")==-1)):
                             is_bad_link = 1
 
                     if(url.find("wiki")!=-1):
                         for bad in bad_wiki_parts:
+                            if(url.find(bad)!=-1):
+                                is_bad_link = 1
+                                
+                    remove_query = ["&","="]
+                    if remove_all_query_urls:
+                        for bad in remove_query:
                             if(url.find(bad)!=-1):
                                 is_bad_link = 1
 
@@ -825,12 +1045,20 @@ def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, 
                                 title = soup.find('title')
                                 title = title.getText()
 
+                                linebreaks = ["\r\n","\r","\n"]
+                                for breaks in linebreaks:
+                                    title = title.replace(breaks,"")
+
                                 print("Title:", title)
                                 if title in traversed_titles:
                                     print("Title already traversed!")
                                 else:
                                     traversed_titles.add(title)
                                     sentences = extract_sentences(percent,get_paragraphs(soup))
+
+                                    #
+                                    # nt("=========================")
+
                                     if not checkForLanguage("__label__INA",percent,soup):
                                         for sentence in sentences[0]:
                                             sentences_file.write(sentence + " || " + url_tag + " || " + url + "\n")
@@ -923,164 +1151,146 @@ def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, 
 
         remove_duplicates("link_queue.txt")
 
-        end = time.time()
-        elapsed = end - start
-        print("Time:", elapsed, "seconds")
 
-
-if __name__ == "__main__":
-    model = fasttext.load_model("8_lang_50k_model.bin")
-    # crawler(10,10,0.6,True)
-    start = time.time()
-
+def parallel_sentences_extractor(save_dir, save_name, pair_dir, pair_list, IA_file_name = "_IA.txt", EN_file_name = "_EN.txt", only_get_verse_pairs = False, has_verse_pairs = False, passages = True):
+    """
+    Gets the parallel sentences for a list of paired texts.
+    
+    Variables:
+    save_dir - The directory where you want to save all of your files
+    save_name - What you want to name the file that stores your parallel sentences
+    pair_dir - The directory where all of the pairs of texts are
+    pair_list - A list specifying each folder name in variable pair_dir. Each of these folders represents one pair of texts and should have 1 Interlingua version and 1 English version
+    IA_file_name - A string that all Interlingua text file names share and English text files don't. Default "_IA.txt"
+    EN_file_name - A string that all Enlgish text file names share and Interlingua text files don't. Default "_IA.txt"
+    only_get_verse_pairs - If True, only accept pairs that have the same verse number. Only works if the verse numbers are seperated by a colon. E.g "2:3." Default is False
+    only_get_verse_pairs - Set to true if the texts have verses. Default is false.
+    passages - Set to True if the text in the passages are seperated into paragraphs and not sentences. Default is True
+    
+    Output:
+    Returns -1 if the Interlingua text file is not a pdf, txt, or html file. Return -2 if the English text file is not a pdf, txt, or html file. Returns 0 if everything worked. Will store the parallel sentences in the variable save_dir directory.
+    """
+    
     baseDir = os.getcwd()
-
-    files = [
-"1_Chronicles",
-"1_Corinthians",
-"1_John",
-"1_Kings",
-"1_Peter",
-"1_Samuel",
-"1_Thessalonians",
-"1_Timothy",
-"2_Chronicles",
-"2_Corinthians",
-"2_John",
-"2_Kings",
-"2_Peter",
-"2_Samuel",
-"2_Thessalonians",
-"2_Timothy",
-"3_John",
-"Acts",
-"Amos",
-"Colossians",
-"Daniel",
-"Deuteronomy",
-"Ecclesiastes",
-"Ephesians",
-"Esther",
-"Exodus",
-"Ezekiel",
-"Ezra",
-"Galatians",
-"Genesis",
-"Habakkuk",
-"Haggai",
-"Hebrews",
-"Hosea",
-"Isaiah",
-"James",
-"Jeremiah",
-"Job",
-"Joel",
-"John",
-"Jonah",
-"Joshua",
-"Jude",
-"Judges",
-"Lamentations",
-"Leviticus",
-"Luke",
-"Malachi",
-"Mark",
-"Matthew",
-"Micah",
-"Nahum",
-"Nehemiah",
-"Numbers",
-"Obadiah",
-"Philemon",
-"Philippians",
-"Proverbs",
-"Psalms",
-"Revelation",
-"Romans",
-"Ruth",
-"The_Song_of_Songs",
-"Titus",
-"Zechariah",
-"Zephaniah",
-        ]
-
     count = 0
     ENG = 0
     INA = 0
 
-    os.chdir(baseDir + "/parallel")
-    parallel_everything = open("parallel_sentences_bible_" + "everything" + ".txt", "w")
+    os.chdir(baseDir + "/" + save_dir)
+    parallel_everything = open(save_name + "_" + "everything" + ".txt", "w")
 
-    for file in files:
+    for file in pair_list:
         print(file)
-        os.chdir(baseDir + "/Bible_for_Jason/" + file)
+        os.chdir(baseDir + "/" + pair_dir + "/" + file)
 
-        onlyfiles = [f for f in listdir(baseDir + "/Bible_for_Jason/" + file) if isfile(join(baseDir + "/Bible_for_Jason/" + file, f))]
+        onlyfiles = [f for f in listdir(baseDir + "/" + pair_dir + "/" + file) if isfile(join(baseDir + "/" + pair_dir + "/" + file, f))]
         text_IA = ""
         text_EN = ""
+
         for file_name in onlyfiles:
-            if file_name.find("_IA.txt") != -1:
+            if file_name.find(IA_file_name) != -1:
                 text_IA = file_name
-            if file_name.find("_EN.txt") != -1:
+            if file_name.find(EN_file_name) != -1:
                 text_EN = file_name
 
-        maxcountpairs = 0
-        output = []
-        maximum = [0,0,0]
-        maximum_pairs = []
-        for i in range(9):
-            for j in range(15):
-                sureness = i + 2
-                percent = round(0.5 + j*0.025,3)
-                os.chdir(baseDir + "/Bible_for_Jason/" + file)
-                pairs = translation(text_EN, text_IA, sureness, True, percent)
+        if(text_IA.find(".txt")!=-1):
+            INA_lines = text_from_txt(text_IA,False)
+            if not passages:
+                INA_lines = [" ".join(INA_lines)]
+                INA_lines = extract_sentences(0.3, INA_lines)[3]
+        elif(text_IA.find(".pdf")!=-1):
+            INA_lines = get_pdf_text(text_IA, False)
+            if not passages:
+                INA_lines = [" ".join(INA_lines)]
+                INA_lines = extract_sentences(0.3, INA_lines)[3]
+        elif (text_IA.find(".html")!=-1):
+            soup = get_soup(text_IA)
+            INA_lines = get_paragraphs(soup)
+            if not passages:
+                INA_lines = [" ".join(INA_lines)]
+                INA_lines = extract_sentences(0.3, INA_lines)[3]
+        else:
+            return -1
 
+        if(text_EN.find(".txt")!=-1):
+            ENG_lines = text_from_txt(text_EN, False)
+            if not passages:
+                ENG_lines = [" ".join(ENG_lines)]
+                ENG_lines = extract_sentences(0.3, ENG_lines)[3]
+        elif(text_EN.find(".pdf")!=-1):
+            ENG_lines = get_pdf_text(text_EN, False)
+            if not passages:
+                ENG_lines = [" ".join(ENG_lines)]
+                ENG_lines = extract_sentences(0.3, ENG_lines)[3]
+        elif (text_EN.find(".html")!=-1):
+            soup = get_soup(text_EN)
+            ENG_lines = get_paragraphs(soup)
+            if not passages:
+                ENG_lines = [" ".join(ENG_lines)]
+                ENG_lines = extract_sentences(0.3, ENG_lines)[3]
+        else:
+            return -2
 
-                correct_verse_pairs = []
-                correct = 1
-                for pair in pairs:
-                    first_colon = pair[0].find(":")
-                    if first_colon != -1 and pair[0][first_colon-1].isdigit() and pair[0][first_colon+1].isdigit:
-                        start = first_colon - 1
-                        while start >= 0:
-                            if not pair[0][start].isdigit():
-                                break
-                            start = start - 1
-                        start = start + 1
+        if only_get_verse_pairs:
+            pairs = parallel_verses(ENG_lines, INA_lines)
+        else:
+            maxcountpairs = 0
+            output = []
+            maximum = [0,0,0]
+            maximum_pairs = []
+            for i in range(8):
+                for j in range(11):
+                    sureness = i + 3
+                    percent = round(0.6 + j*0.025,3)
+                    os.chdir(baseDir + "/" + pair_dir + "/" + file)
+                    pairs = translation(ENG_lines, INA_lines, sureness, percent)
 
-                        end = first_colon + 1
-                        while end < len(pair[0]):
-                            if not pair[0][end].isdigit():
-                                break
-                            end = end + 1
+                    if has_verse_pairs:
+                        correct_verse_pairs = []
+                        correct = 1
+                        for pair in pairs:
+                            first_colon = pair[0].find(":")
+                            if first_colon != -1 and pair[0][first_colon-1].isdigit() and pair[0][first_colon+1].isdigit:
+                                start = first_colon - 1
+                                while start >= 0:
+                                    if not pair[0][start].isdigit():
+                                        break
+                                    start = start - 1
+                                start = start + 1
 
-                        verse_number = pair[0][start:end]
+                                end = first_colon + 1
+                                while end < len(pair[0]):
+                                    if not pair[0][end].isdigit():
+                                        break
+                                    end = end + 1
 
-                        if pair[1].find(verse_number) != -1:
-                            correct = 1
-                            correct_verse_pairs.append(pair)
-                        else:
-                            correct = 0
-                    else:
-                        if correct == 1:
-                            correct_verse_pairs.append(pair)
+                                verse_number = pair[0][start:end]
 
-                pairs = correct_verse_pairs
+                                if pair[1].find(verse_number) != -1:
+                                    correct = 1
+                                    correct_verse_pairs.append(pair)
+                                else:
+                                    correct = 0
+                            else:
+                                if correct == 1:
+                                    correct_verse_pairs.append(pair)
 
-                output.append([sureness,percent,len(pairs)])
-                if((len(pairs) > maxcountpairs) or ((len(pairs) == maxcountpairs) and percent >= maximum[1] and sureness >= maximum[0])):
-                    maxcountpairs = len(pairs)
-                    maximum = [sureness,percent,len(pairs)]
-                    maximum_pairs = pairs
-                print("Count:", len(pairs), "| Sureness:", sureness, "| Percent:", percent)
-        print("========")
-        output = sorted(output, key=itemgetter(2))
+                        pairs = correct_verse_pairs
 
-        for trial in output:
-            print("Count:", trial[2], "| Sureness:", trial[0], "| Percent:", trial[1])
-        pairs = maximum_pairs
-        print("Max:", maximum)
-        print("========")
+                    output.append([sureness,percent,len(pairs)])
+                    if((len(pairs) > maxcountpairs) or ((len(pairs) == maxcountpairs) and percent >= maximum[1] and sureness >= maximum[0])):
+                        maxcountpairs = len(pairs)
+                        maximum = [sureness,percent,len(pairs)]
+                        maximum_pairs = pairs
+                    print("Count:", len(pairs), "| Sureness:", sureness, "| Percent:", percent)
+            print("========")
+            output = sorted(output, key=itemgetter(2))
+
+            for trial in output:
+                print("Count:", trial[2], "| Sureness:", trial[0], "| Percent:", trial[1])
+            pairs = maximum_pairs
+            print("Max:", maximum)
+            print("========")
 
         print("Count", len(pairs))
         INA_lines = text_from_txt(text_IA,False)
@@ -1092,10 +1302,10 @@ if __name__ == "__main__":
         ENG = ENG + len(extract_sentences(0.3, ENG_lines)[3])
         INA = INA + len(extract_sentences(0.3, INA_lines)[3])
 
-        os.chdir(baseDir + "/parallel")
-        parallel = open("parallel_sentences_" + file + ".txt", "w")
+        os.chdir(baseDir + "/" + save_dir)
+        parallel = open(save_name + "_" + file + ".txt", "w")
 
-        parallel.write("Pair Count: " + str(maximum[2]) + " | Sureness Value: " + str(maximum[0]) + " | Check Percent: " + str(maximum[1]) + "\n")
+        # parallel.write("Pair Count: " + str(maximum[2]) + " | Sureness Value: " + str(maximum[0]) + " | Check Percent: " + str(maximum[1]) + "\n")
         parallel.write("Number of ENG Sentences: " + str(len(extract_sentences(0.3, ENG_lines)[3])) + "\n")
         parallel.write("Number of INA Sentences: " + str(len(extract_sentences(0.3, INA_lines)[3])) + "\n" + "\n")
 
@@ -1115,11 +1325,21 @@ if __name__ == "__main__":
 
         parallel.close()
 
-
-    end = time.time()
-    print("Seconds:", end - start)
-
     print("Number of pairs: ", count)
     print("Number of ENG Sentences: ", ENG)
     print("Number of INA Sentences: ", INA)
     print("Percent: ", count / ENG * 100, "%")
+
+    return 0
+
+
+model = fasttext.load_model("8_lang_50k_model.bin")
+if __name__ == "__main__":
+
+    list = ["John","Luke","Mark","Matthew"]
+    parallel_sentences_extractor("4_books_parallel_sentences","4_books","Gospels_reformatted",list,"IA_v2")
+
+    # start = time.time()
+    # crawler(100,10000,0.3,True)
+    # end = time.time()
+    # print("Seconds:", end - start)

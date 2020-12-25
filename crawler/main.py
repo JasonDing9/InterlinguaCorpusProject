@@ -16,10 +16,10 @@ from os import listdir
 from operator import itemgetter
 
 
-class TimeoutException(Exception):   # Custom exception class
+class TimeoutException(Exception):
     pass
 
-def timeout_handler(signum, frame):   # Custom signal handler
+def timeout_handler(signum, frame):
     raise TimeoutException
 
 def get_html(link_url):
@@ -34,6 +34,17 @@ def get_soup(url):
     return soup
 
 def get_paragraphs(soup):
+    """
+    Use this on a BeautifulSoup's soup (use the get_soup function on a url to get it's soup) 
+    in order to get the paragraphs from a url. Returns the texts in a paragraph in a list.
+    
+    Inputs:
+    soup - Should be the "soup" of the url. Use get_soup to get the soup of the url.
+    
+    Outputs:
+    Each paragraph's texts in a list
+    """
+
     texts = []
     newline = ["\r\n", "\r", "\n"]
     for p in soup.findAll('p'):
@@ -147,7 +158,24 @@ def get_paragraphs(soup):
     return texts
 
 
-def extract_sentences(fraction, texts, allow_lower_case_start = True, allow_number_start = True, min = 0.3):
+def extract_sentences(fraction, texts, allow_lower_case_start = False, allow_number_start = False, min = 0.3):
+    """
+    Extracts the interlingua and non-interlingua sentences from a block of text
+    
+    Inputs:
+    fraction - Used to determin if a block of text is mainly interlingua. If the fraction of Interlingua senteces to total sentences in the block of text is greater ot equal than variable fraction, then function extract_sentences' 3rd output is True. Otherwise, the 3rd output is false.
+    texts - A list of texts that you wish to extract sentences from
+    allow_lower_case_start - If this is set to True, then it will detect sentences that start with a lower case letter. If set to false, all detected sentences will start with an upper case letter. Default is False.
+    allow_lower_case_start - If this is set to True, then it will detect sentences that start with a number. If set to false, all detected sentences will not start with a letter. Default is False.
+    min - The minimum confidence value given by the interlingua-detection model in order to consider the sentence to be an interlingua sentence. Default is 0.3
+    
+    Outputs:
+    Output 1 - A list of the Interlingua senteces that are in variable texts. Any "Interlingua" sentences that had a value less than min from the Interlingua-detection model are not included in this list
+    Output 2 - A list of the non-Interlingua senteces that are in variable texts.
+    Output 3 - True if the fraction of Interlingua sentences is greater than or equal to variable fraction. Otherwise, return False
+    Output 4 - A list of all senteces the sentences in text (a combination of output 1 and 2)
+    """
+    
     spaces = [" ", "\u00A0"]
     newline = ["\r\n", "\r", "\n"]
     punctuation = [".", "!", "?"]
@@ -225,12 +253,12 @@ def extract_sentences(fraction, texts, allow_lower_case_start = True, allow_numb
 
             i = i + 1
     i = 0
-    # while i < len(sentences):
-    #     if len(sentences[i].split()) <= 2 and len(sentences[i]) <= 5:  # If a "sentence" has 2 or less words and less
-    #                                                                    # than or equal to 5 chars, delete it
-    #         sentences.remove(sentences[i])
-    #         i = i - 1
-    #     i = i + 1
+    while i < len(sentences):
+        if len(sentences[i].split()) <= 2 and len(sentences[i]) <= 5:  # If a "sentence" has 2 or less words and less
+                                                                       # than or equal to 5 chars, delete it
+            sentences.remove(sentences[i])
+            i = i - 1
+        i = i + 1
 
     output = findAndSeperateLanguage(sentences, fraction, "__label__INA", min)
     # if(output[0]):
@@ -247,6 +275,10 @@ def findLanguage(sentences, fraction, language_lable):
     return len(sentences)*fraction + 1 <= count
 
 def findAndSeperateLanguage(sentences, fraction, language_lable, min = 0.3):
+    """
+    Used in extract_sentences
+    """
+    
     count = 0
     INA = []
     nonINA = []
@@ -261,6 +293,17 @@ def findAndSeperateLanguage(sentences, fraction, language_lable, min = 0.3):
     return len(sentences)*fraction + 1 <= count, INA, nonINA
 
 def get_links(soup, original_link):
+    """
+    Finds all of the links on a website
+    
+    Inputs:
+    soup - the soup of the url (use get_soup)
+    original_link - the url of the page
+    
+    Output:
+    A list of all of the links
+    """
+    
     links = []
     for link in soup.findAll('a', href=True):
         text = link['href']
@@ -273,6 +316,16 @@ def get_links(soup, original_link):
 
 
 def get_link_root(link):
+    """
+    Gets the root of a url
+    
+    Inputs:
+    link - the url of the page
+    
+    Output:
+    Returns the root of the link if it can fint it. Otherwise, returns -1.
+    """
+    
     websites = ["com", "org", "net", "int", "edu", "gov", "mil"]
     for extension in websites:
         index = link.find(extension)
@@ -292,6 +345,19 @@ def load_vectors(fname):
 
 
 def checkForLanguage(lable, fraction, soup, min = 0.9):
+    """
+    Used to check if a page is writting in a language. Considers the title, spans, divs, headers, anchors, and paragraphs of the website.
+    
+    Inputs:
+    lable - String of the lable of the language you want to check for
+    fraction - The minimum threshhold for the fraction of the total sentences that in the language in order for the website to be considered to be written in that language
+    soup - The soup of the website
+    min - The minimum confidence value given by the interlingua-detection model in order to consider the sentence to be an interlingua sentence. Default is 0.3
+    
+    Output:
+    True if the website is condered to be variable lable's language. Otherwise, return false
+    """
+    
     print()
     print("Checking if page is " + lable)
     valid = 0
@@ -391,7 +457,7 @@ def checkForLanguage(lable, fraction, soup, min = 0.9):
         return False
 
 
-def fonts(doc, granularity=False):
+def fonts(doc, granularity=False):  # thanks to https://towardsdatascience.com/extracting-headers-and-paragraphs-from-pdf-using-pymupdf-676e8421c467
     """Extracts fonts and their usage in PDF documents.
     :param doc: PDF document to iterate through
     :type doc: <class 'fitz.fitz.Document'>
@@ -427,7 +493,7 @@ def fonts(doc, granularity=False):
     return font_counts, styles
 
 
-def font_tags(font_counts, styles):
+def font_tags(font_counts, styles):  # thanks to https://towardsdatascience.com/extracting-headers-and-paragraphs-from-pdf-using-pymupdf-676e8421c467
     """Returns dictionary with font sizes as keys and tags as value.
     :param font_counts: (font_size, count) for all fonts occuring in document
     :type font_counts: list
@@ -461,7 +527,7 @@ def font_tags(font_counts, styles):
     return size_tag
 
 
-def headers_para(doc, size_tag):
+def headers_para(doc, size_tag):  # thanks to https://towardsdatascience.com/extracting-headers-and-paragraphs-from-pdf-using-pymupdf-676e8421c467
     """Scrapes headers & paragraphs from PDF and return texts with element tags.
     :param doc: PDF document to iterate through
     :type doc: <class 'fitz.fitz.Document'>
@@ -516,6 +582,17 @@ def headers_para(doc, size_tag):
 
 
 def get_pdf_text(url, is_url=True):
+    """
+    Used to get the paragraph text out of a pdf.
+    
+    Inputs:
+    url - The url of the pdf or the name of the pdf in the same directory
+    is_url - If the pdf is from a url, this should be True. If it's a pdf in your directory, this should be False. Deafult is True.
+    
+    Output:
+    A list of each paragraph in the pdf.
+    """
+    
     out = []
     if is_url:
         urlretrieve(url, 'temp.pdf')
@@ -545,6 +622,18 @@ def get_pdf_text(url, is_url=True):
 
 
 def text_from_txt(url, is_url=True):
+    """
+    Used to get the text out of a txt file.
+    
+    Inputs:
+    url - The url of the txt file or the name of the txt file in the same directory
+    is_url - If the txt file is from a url, this should be True. If it's a txt file in your directory, this should be False. Deafult is True.
+    
+    Output:
+    A list of each paragraph in the txt file.
+    """
+    
+    continuation = ["-\r\n","-\r","-\n"]
     linebreaks = ["\r\n","\r","\n"]
     if is_url:
         source = urlopen(url)
@@ -559,6 +648,9 @@ def text_from_txt(url, is_url=True):
                     lines.append(text)
                 text = ""
             else:
+                for cont in continuation:
+                    line = line.replace(cont, "")
+
                 for breaks in linebreaks:
                     line = line.replace(breaks, " ")
                 text += line
@@ -576,6 +668,8 @@ def text_from_txt(url, is_url=True):
                     lines.append(text)
                 text = ""
             else:
+                for cont in continuation:
+                    line = line.replace(cont, "")
                 for breaks in linebreaks:
                     line = line.replace(breaks, " ")
                 text += line
@@ -583,6 +677,16 @@ def text_from_txt(url, is_url=True):
         return lines
 
 def remove_duplicates(file):
+    """
+    Removes any duplicate/identical lines in a file
+    
+    Inputs:
+    file - The name of the file. Should be in the same directory.
+    
+    Output:
+    Void
+    """
+    
     open_file = open(file, "r")
     file_elements = open_file.readlines()
     file_elements = list(OrderedDict.fromkeys(file_elements))
@@ -593,7 +697,16 @@ def remove_duplicates(file):
         write_file.write(line)
     write_file.close()
 
-def get_special_chars(text):  # get chars that are not letters or spaces (keeps order)
+def get_special_chars(text):  
+    """
+    Gets the chars in a string that are not letters or spaces (keeps the order)
+    
+    Inputs:
+    text - The string you want to get the special characters of
+    
+    Output:
+    A string of the special characters of the text
+    """
     chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
                 "u", "v", "w", "x", "y", "z", " ", "\u00AD", "\u002D", "\u05BE", "\u2010", "\u2011", "\u2012", "\u2013",
              "\u2014", "\u2015", "’","]",")", "[", "("]
@@ -601,6 +714,17 @@ def get_special_chars(text):  # get chars that are not letters or spaces (keeps 
     return ''.join(char for char in text.lower() if char not in chars)
 
 def check_if_two_passages_are_translations(INA_line, NON_line):
+    """
+    Checks if an Interlingua and an English are translations of each other. Should only be used if you are already quiet certain that the two are translations and use this as way to recheck. Will detect if two sentences are not translations, but may give some false positives if used incorrectly.
+    
+    Inputs:
+    INA_line - String of the Interlingua sentence
+    NON_line - String of the English sentence
+    
+    Output:
+    Return True if the sentences are translations of each other. Otherwise, returns false.
+    """
+    
     INA_line = INA_line.lower()
     NON_line = NON_line.lower()
     chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
@@ -616,6 +740,7 @@ def check_if_two_passages_are_translations(INA_line, NON_line):
 
 
 def find_similar_string(array, string, start, decimal):
+    
     for i in range(len(array)-start):
         if SequenceMatcher(None,array[start+i], string).ratio() >= decimal:
             return start+i
@@ -623,7 +748,19 @@ def find_similar_string(array, string, start, decimal):
 
 
 def parallel_texts(array_one, array_two, sureness_value = 3, percent_check = 0.8):
-
+    """
+    Given two passages in different languages that are translations of each other, tries to get the parallel senteces between the two passages.
+    
+    Inputs:
+    array_one - A list of each sentence of the passage in one language
+    array_two - A list of each sentence of the passage in another language
+    sureness_value - How sure you want to be that two sentences are a translation of each other. Default is 3
+    percent_check - How similar must the two sentences be in order to be considered translation of each other. Default is 0.8
+    
+    Output:
+    A list of pairs of translated sentences
+    """
+    
     counter_one = 0
     counter_two = 0
 
@@ -680,6 +817,17 @@ def parallel_texts(array_one, array_two, sureness_value = 3, percent_check = 0.8
     return out
 
 def parallel_verses(ENG_lines, INA_lines):
+    """
+    Finds the parallel verses of two texts. Used on passages that use verses. E.g. the Bible
+    
+    Inputs:
+    ENG_lines - A list of the English sentences
+    INA_lines - A list of the Interlingua sentences
+    
+    Output:
+    A list of pairs of translated sentences
+    """
+    
     out = []
     for INA_line in INA_lines:
         first_colon = INA_line.find(":")
@@ -706,32 +854,51 @@ def parallel_verses(ENG_lines, INA_lines):
     return out
 
 def translation(ENG_lines, INA_lines, sureness_value = 3, percent_check = 0.8):
-
-    ###print(INA_lines)
-    ###print(ENG_lines)
+    """
+    Given two passages in different languages that are translations of each other, tries to get the parallel senteces between the two passages.
+    
+    Inputs:
+    array_one - A list of each paragraph of the passage in one language
+    array_two - A list of each paragraph of the passage in another language
+    sureness_value - How sure you want to be that two sentences are a translation of each other. Default is 3
+    percent_check - How similar must the two sentences be in order to be considered translation of each other. Default is 0.8
+    
+    Output:
+    A list of pairs of translated sentences
+    """
+    
     parallel_passages = parallel_texts(ENG_lines, INA_lines, sureness_value, percent_check)
-    ###print("Length:", len(parallel_passages))
     count = 0
     out = []
 
     for parallel_passage in parallel_passages:
-        ###print(parallel_passage[0], parallel_passage[1])
-        ###print(parallel_passage[0])
-        ###print(parallel_passage[1])
         sentences_ENG = extract_sentences(0.3,[parallel_passage[0]])[3];
         sentences_INA = extract_sentences(0.3,[parallel_passage[1]])[3];
-        ###print(sentences_ENG)
-        ###print(sentences_INA)
+
         parallel_sentences = parallel_texts(sentences_ENG,sentences_INA, sureness_value, percent_check)
         for sentence_pair in parallel_sentences:
-            # print("[ENG]", sentence_pair[0])
-            # print("[INA]", sentence_pair[1])
-            # print("")
             out.append(sentence_pair)
     return out
 
 
 def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, only_ia_wiki = False, remove_all_query_urls = True):
+    """
+    A webcrawler that will crawl and store any Interlingua sentences it finds.
+    
+    Files:
+    traversed_links.txt - Stores what links the crawler has traversed so far
+    link_queue.txt - The queue of links the crawler wishes to crawl in the future
+    sentencesINA.txt - Stores all of the Interlingua sentences the crawlers finds
+    sentencesNonINA.txt - Stores all of the non-Interlingua sentences the crawler finds
+    failedWebsites.txt - Websites that either took too long to load or was given an error
+    failedWebsites.txt - Stores the number of each url type the crawler has been to (.com, .org, .pdf, etc)
+    
+    Inputs:
+    number_of_iterations - Number of times you want to run the crawler
+    number_of_links_per_iteration - Number of links you want to go threw per iteration
+    percent - Used for the variable fraction in extract_sentences and variable fraction in checkForLanguage
+    """
+    
     signal.signal(signal.SIGALRM, timeout_handler)
 
     for j in range(number_of_iterations):
@@ -986,6 +1153,24 @@ def crawler(number_of_iterations, number_of_links_per_iteration, percent = 0.4, 
 
 
 def parallel_sentences_extractor(save_dir, save_name, pair_dir, pair_list, IA_file_name = "_IA.txt", EN_file_name = "_EN.txt", only_get_verse_pairs = False, has_verse_pairs = False, passages = True):
+    """
+    Gets the parallel sentences for a list of paired texts.
+    
+    Variables:
+    save_dir - The directory where you want to save all of your files
+    save_name - What you want to name the file that stores your parallel sentences
+    pair_dir - The directory where all of the pairs of texts are
+    pair_list - A list specifying each folder name in variable pair_dir. Each of these folders represents one pair of texts and should have 1 Interlingua version and 1 English version
+    IA_file_name - A string that all Interlingua text file names share and English text files don't. Default "_IA.txt"
+    EN_file_name - A string that all Enlgish text file names share and Interlingua text files don't. Default "_IA.txt"
+    only_get_verse_pairs - If True, only accept pairs that have the same verse number. Only works if the verse numbers are seperated by a colon. E.g "2:3." Default is False
+    only_get_verse_pairs - Set to true if the texts have verses. Default is false.
+    passages - Set to True if the text in the passages are seperated into paragraphs and not sentences. Default is True
+    
+    Output:
+    Returns -1 if the Interlingua text file is not a pdf, txt, or html file. Return -2 if the English text file is not a pdf, txt, or html file. Returns 0 if everything worked. Will store the parallel sentences in the variable save_dir directory.
+    """
+    
     baseDir = os.getcwd()
     count = 0
     ENG = 0
