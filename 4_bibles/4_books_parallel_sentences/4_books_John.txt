@@ -1,0 +1,1278 @@
+Number of ENG Sentences: 775
+Number of INA Sentences: 1018
+
+[ENG] 1:1 In the beginning was the Word, and the Word was with God, and the Word was fully God.
+[INA] 1:1 In le principio era le Ration, e le Ration era apud Deo e Deo era le Ration.
+
+[ENG] 1:2 The Word was with God in the beginning.
+[INA] 1:2 Iste era in principio apud Deo.
+
+[ENG] 1:3 All things were created by him, and apart from him not one thing was created that has been created.
+[INA] 1:3 Tote le cosas mediente Ille deveniva e sin Ille deveniva ni un cosa que ha essite facite.
+
+[ENG] 1:5 And the light shines on in the darkness, but the darkness has not mastered it.
+[INA] 1:5 e le luce in le tenebras brilla, e le tenebras non recipeva Le.
+
+[ENG] 1:7 He came as a witness to testify about the light, so that everyone might believe through him.
+[INA] 1:7 Iste veniva pro testimonio, ut ille teste sia circa le luce, ut totos credera per ille.
+
+[ENG] 1:8 He himself was not the light, but he came to testify about the light.
+[INA] 1:8 Ille non era le luce mais ut ille sia teste circa le luce.
+
+[ENG] 1:9 The true light, who gives light to everyone, was coming into the world.
+[INA] 1:9 Le Ration era le luce ver, veniente al mundo, que illumina omne homine.
+
+[ENG] 1:10 He was in the world, and the world was created by him, but the world did not recognize him.
+[INA] 1:10 Le Ration in le mundo era e le mundo per Ille esseva facite, e le mundo non Le cognosceva.
+
+[ENG] 1:11 He came to what was his own, but his own people did not receive him.
+[INA] 1:11 Veniva ad suos e le suos non Le recipeva.
+
+[ENG] 1:13 —children not born by human parents or by human desire or a husband’s decision, but by God.
+[INA] 1:13 qui non nasceva ex sanguines ni ex voluntate del carne, ni ex voluntate de viro mais ex Deo.
+
+[ENG] 1:14 Now the Word became flesh and took up residence among us.
+[INA] 1:14 E le Ration deveniva carne e poneva su tenta inter nos e nos contempla su gloria, gloria que es del unigenito del Patre plen de gratia e de veritate.
+
+[ENG] 1:17 For the law was given through Moses, but grace and truth came about through Jesus Christ.
+[INA] 1:17 quia le lege per Moises era date, le gratia e le veritate per Jesus Christo era devenite.
+
+[ENG] 1:18 No one has ever seen God.
+[INA] 1:18 Nemo ha vidite nunquam Deo; le unigenite Deo, Ille que es in le sino del Padre, Ille revelava Le.
+
+[ENG] 1:26 John answered them, “I baptize with water.
+[INA] 1:26 Johannes respondeva dicente: io baptiza in aqua; in medio de vos es Ille quem vos non cognosce.
+
+[ENG] 1:27 who is coming after me.
+[INA] 1:27 Ille que post me es veniente de qui io non esse digne ut io disliga le corregia del sandalia.
+
+[ENG] 1:28 These things happened in Bethany across the Jordan River where John was baptizing.
+[INA] 1:28 Iste cosas passava in Betania, plus illac del Jordan ubi era Johannes baptizante.
+
+[ENG] 1:29 On the next day John saw Jesus coming toward him and said, “Look, the Lamb of God who takes away the sin of the world!
+[INA] 1:29 In le die sequente ille videva Jesus qui veniva ad ille e Johannes diceva: vide!
+
+[ENG] 1:30 This is the one about whom I said, ‘After me comes a man who is greater than I am, because he existed before me.’
+[INA] 1:30 Iste es per Ille qui io diceva: post me veni un viro que ante io era ponite quia prime que io Ille era.
+
+[ENG] 1:32 Then John testified, “I saw the Spirit descending like a dove from heaven, and it remained on him.
+[INA] 1:32 E Johannes testimoniava, dicente: Io ha contemplate le Spirito descendente como un columba ex le celo e Illo remaneva super Ille.
+
+[ENG] 1:33 And I did not recognize him, but the one who sent me to baptize with water said to me, ‘The one on whom you see the Spirit descending and remaining—this is the one who baptizes with the Holy Spirit.’
+[INA] 1:33 E io non Le cognosceva, mais ille que inviava me baptizar in aqua, ille ne diceva: super Ille que tu vide le Spirito descendente e posante super ille, Ille es qui baptiza in Spirito Sancte.
+
+[ENG] 1:37 When John’s two disciples heard him say this, they followed Jesus.
+[INA] 1:37 E le duo discipulos audiva quando Ille parlava e sequeva Jesus.
+
+[ENG] 1:40 Andrew, the brother of Simon Peter, was one of the two disciples who heard what John said and followed Jesus.
+[INA] 1:40 Era Andreas, le fratre de Simon Petro, un del duo que audiva apud Johannes e illes Le sequeva.
+
+[ENG] 1:41 He first found his own brother Simon and told him, “We have found the Messiah!” (which is translated Christ).
+[INA] 1:41 Iste primemente incontrava su fratre Simon e le diceva: nos ha trovate le Mesias (ille que es interpretate Christo).
+
+[ENG] 1:42 Andrew brought Simon to Jesus.
+[INA] 1:42 Ille le portava a Jesus.
+
+[ENG] Jesus looked at him and said, “You are Simon, the son of John.
+[INA] Jesus reguardante le, diceva: tu esse Simon, le filio de Johannes, tu te appellara Cephas (ille que es interpretate Petro).
+
+[ENG] 1:43 On the next day Jesus wanted to set out for Galilee.
+[INA] 1:43 In le sequente dia, Jesus voleva exir versus Galilea e incontra Philippo.
+
+[ENG] 1:50 Jesus said to him, “Because I told you that I saw you under the fig tree, do you believe?
+[INA] 1:50 Jesus respondeva e diceva: Quia Io te diceva que te videva sub le fico, tu crede, tu videra major cosas.
+
+[ENG] 2:1 Now on the third day there was a wedding at Cana in Galilee.
+[INA] 2:1 E in le die tertie un nupcial deveniva in Cana de Galilea, e era le matre de Jesus illic.
+
+[ENG] 2:2 and Jesus and his disciples were also invited to the wedding.
+[INA] 2:2 Tunc, era invitate etiam Jesus e su discipulos al nupcial.
+
+[ENG] 2:4 Jesus replied, “Woman, why are you saying this to me?
+[INA] 2:4 E Jesus la diceva: que a Me e a te, femina?
+
+[ENG] 2:10 and said to him, “Everyone serves the good wine first, and then the cheaper wine when the guests are drunk.
+[INA] 2:10 e dice le: Tote homine pone primo le bon vino e quando illes son ebrie, le pejor; tu ha conservate le bon vino usque ora.
+
+[ENG] 2:11 Jesus did this as the first of his miraculous signs, in Cana of Galilee.
+[INA] 2:11 Jesus faceva iste principio del signos in Cana de Galilea e manifestava su gloria e su discipulos credeva in Illo.
+
+[ENG] 2:12 After this he went down to Capernaum with his mother and brothers and his disciples, and they stayed there a few days.
+[INA] 2:12 Post isto, Jesus e su matre e su fratres e su discipulos descendeva a Capharnaum e illic remaneva non multe dias.
+
+[ENG] 2:13 Now the Jewish feast of Passover was near, so Jesus went up to Jerusalem.
+[INA] 2:13 E le pascha del judeos era proxime e Jesus ascendeva a Jerusalem.
+
+[ENG] 2:16 To those who sold the doves he said, “Take these things away from here!
+[INA] 2:16 e diceva a illes que vendeva le columbas: Quita!
+
+[ENG] 2:21 But Jesus was speaking about the temple of his body.
+[INA] 2:21 Mais Ille parlava circa le templo de su corpore.
+
+[ENG] 2:22 So after he was raised from the dead, his disciples remembered that he had said this, and they believed the scripture and the saying that Jesus had spoken.
+[INA] 2:22 Quando, alora, Jesus resuscitava ex le mortos, su discipulos recordava que Ille isto habeva dicite e credeva in le Scriptura e in le parola que diceva Jesus.
+
+[ENG] 2:23 Now while Jesus was in Jerusalem at the Feast of the Passover, many people believed in his name because they saw the miraculous signs he was doing.
+[INA] 2:23 Dum Jesus era in Jerusalem, in le pacha, in le festa, multos credeva in su nomine, vidente su signos que faceva.
+
+[ENG] 2:25 He did not need anyone to testify about man, for he knew what was in man.
+[INA] 2:25 e quia Ille non habeva necessitate que un tal testimoniara circa le homine, pro isto, Ille cognosceva que era in le homine.
+
+[ENG] 3:4 Nicodemus said to him, “How can a man be born when he is old?
+[INA] 3:4 Nicodemo Le dice: Como pote un homine nascer essente vetule?
+
+[ENG] 3:5 Jesus answered, “I tell you the solemn truth, unless a person is born of water and spirit, he cannot enter the kingdom of God.
+[INA] 3:5 Respondeva Jesus: Amen, amen, Io te dice, si alcuno non nasce ex aqua e ex Spirito, non pote intrar in el Regno de Deo.
+
+[ENG] 3:6 What is born of the flesh is flesh, and what is born of the Spirit is spirit.
+[INA] 3:6 Illo que ha nascite ex carne, carne es, e illo que ha nascite ex Spirito, spirito es.
+
+[ENG] 3:8 The wind blows wherever it will, and you hear the sound it makes, but do not know where it comes from and where it is going.
+[INA] 3:8 Le spirito, ubi vole, suffla e su voce tu audi mais tu non sape de ubi veni e ad ubi vade; assi es tote le nascito ex le Spirito.
+
+[ENG] 3:10 Jesus answered, “Are you the teacher of Israel and yet you don’t understand these things?
+[INA] 3:10 Respondeva Jesus e diceva: Esse tu le magistro de Israel e isto non cognosce?
+
+[ENG] 3:11 I tell you the solemn truth, we speak about what we know and testify about what we have seen, but you people do not accept our testimony.
+[INA] 3:11 Amen, amen, Io te dice que nos parla lo que nos sape e nos testifica lo que nos ha vidite, e le testimonio nostre vos non recipe.
+
+[ENG] 3:12 If I have told you people about earthly things and you don’t believe, how will you believe if I tell you about heavenly things?
+[INA] 3:12 Si le cosas terrene Io diceva a vos, e vos non crede, como, si Io dice a vos le cosas celeste, credera vos?
+
+[ENG] 3:13 No one has ascended into heaven except the one who descended from heaven—the Son of Man.
+[INA] 3:13 E necune ha ascendite al celo solmente Ille que del celo descendeva, le Filio del Homine.
+
+[ENG] 3:16 For this is the way God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life.
+[INA] 3:16 Quia assi amava Deo le mundo tanto que dava su Filio, le unigenite, ut tote ille qui crede in Ille no perecera sed habera le vita eterne.
+
+[ENG] 3:17 For God did not send his Son into the world to condemn the world, but that the world should be saved through him.
+[INA] 3:17 Quia Deo non inviava le Filio al mundo ut Ille judicara le mundo sed ut sia salve le mundo mediante Ille.
+
+[ENG] 3:18 The one who believes in him is not condemned.
+[INA] 3:18 Ille que crede in Ille no es judicate; ille que no crede jam es judicate quia no ha credite in le nomine del unigenite Filio de Deo.
+
+[ENG] 3:19 Now this is the basis for judging: that the light has come into the world and people loved the darkness rather than the light, because their deeds were evil.
+[INA] 3:19 Mais iste es le judicio, que le luce ha venite al mundo e le homines amava plus le tenebras que le luce quia su opera era mal.
+
+[ENG] 3:21 But the one who practices the truth comes to the light, so that it may be plainly evident that his deeds have been done in God.
+[INA] 3:21 mais ille que opera le veritate veni versus le luce ut su opera sia manifestate quia in Deo ha essite facite.
+
+[ENG] 3:22 After this, Jesus and his disciples came into Judean territory, and there he spent time with them and was baptizing.
+[INA] 3:22 Post isto, Jesus e sus discipulos veniva ad Judea e illic Ille remaneva con illes e baptizava.
+
+[ENG] 3:25 Now a dispute came about between some of John’s disciples and a certain Jew concerning ceremonial washing.
+[INA] 3:25 Tunc deveniva un discussion del discipulos de Johannes con un judeo circa le purificationes.
+
+[ENG] 3:27 John replied, “No one can receive anything unless it has been given to him from heaven.
+[INA] 3:26 E illes veniva ad Johannes e le diceva: Magistro, ille que era con te trans le Jordan de qui tu ha date testimonio, ecce ille baptiza e tote veni ad Ille.
+
+[ENG] 3:28 You yourselves can testify that I said, ‘I am not the Christ,’ but rather, ‘I have been sent before him.’
+[INA] 3:28 Vos mesme me testimonia que io diceva: io no esse le Christo, sed que io ha essite inviate avante Ille.
+
+[ENG] 3:29 The one who has the bride is the bridegroom.
+[INA] 3:29 Ille que tene sponsa es sponso; mais le amico del sponso que asiste e le audi, con gaudio gaude a causa del voce del sponso.
+
+[ENG] This then is my joy, and it is complete.
+[INA] Nam iste gaudio mie ha essite complite.
+
+[ENG] 3:31 The one who comes from above is superior to all.
+[INA] 3:31 Ille qui desde lo alto veni es super totes; ille essente ex le terra ex le terra es e parla ex le terra.
+
+[ENG] 3:32 He testifies about what he has seen and heard, but no one accepts his testimony.
+[INA] 3:32 illo que ille ha vidite e audite, isto ille testifica, e su testimonio necuno acepta.
+
+[ENG] 3:33 The one who has accepted his testimony has confirmed clearly that God is truthful.
+[INA] 3:33 Ille que acepta su testimonio confirma que Deo es verace.
+
+[ENG] 3:34 For the one whom God has sent speaks the words of God, for he does not give the Spirit sparingly.
+[INA] 3:34 Quia ille quem Deo inviava parla le parolas de Deo; nam le Spirito non per mensura da.
+
+[ENG] 3:35 The Father loves the Son and has placed all things under his authority.
+[INA] 3:35 Le Patre ama le Filio e ha date toto in su manos.
+
+[ENG] 3:36 The one who believes in the Son has eternal life.
+[INA] 3:36 Ille que crede in le Filio tene vita eterne; ille que disobedi le Filio non videra le vita sed le ira de Deo remane super ille.
+
+[ENG] 4:3 he left Judea and set out once more for Galilee.
+[INA] 4:3 abandonava Judea e ambulava novemente a Galilea.
+
+[ENG] 4:4 But he had to pass through Samaria.
+[INA] 4:4 Ille debeva passar per Samaria.
+
+[ENG] 4:6 Jacob’s well was there, so Jesus, since he was tired from the journey, sat right down beside the well.
+[INA] 4:6 le fonte de Jacob era illic.
+
+[ENG] It was about noon.
+[INA] Tunc Jesus fatigate per le cammino sedeva assi juncte le fonte; le hora era como sexte.
+
+[ENG] 4:7 A Samaritan woman came to draw water.
+[INA] 4:7 Veniva un femina de Samaria pro extraher aqua.
+
+[ENG] 4:11 “Sir,” the woman said to him, “you have no bucket and the well is deep; where then do you get this living water?
+[INA] 4:11 Le femina Le diceva: Senior, ni Tu tene cubo e le puteo es profunde, de ubi, alora, ha tu le aqua vive?
+
+[ENG] 4:12 Surely you’re not greater than our ancestor Jacob, are you?
+[INA] 4:12 Utrum tu esse major que nostre patre Jacob que nos dava le puteo e ille mesme e su filios e su bestiales bibeva ex illo?
+
+[ENG] 4:13 Jesus replied, “Everyone who drinks some of this water will be thirsty again.
+[INA] 4:13 Jesus respondeva e la diceva: tote que bebe de iste aqua habera sete de nove.
+
+[ENG] 4:18 for you have had five husbands, and the man you are living with now is not your husband.
+[INA] 4:18 Cinque, alora, viros tu habeva, e ora ille que tu tene non es tu viro; isto ver tu ha dicite.
+
+[ENG] 4:19 The woman said to him, “Sir, I see that you are a prophet.
+[INA] 4:19 Le femina Le diceva: Senior, io vide que Tu es propheta.
+
+[ENG] 4:23 But a time is coming—and now is here —when the true worshipers will worship the Father in spirit and truth, for the Father seeks such people to be his worshipers.
+[INA] 4:23 mais venira un hora, e ora es quando le ver adoratores adorara le Patre in spirito e in veritate; e, alora, le Patre cerca tales que Le adorara .
+
+[ENG] 4:30 So they left the town and began coming to him.
+[INA] 4:30 Illes sortiva ex le citate e veniva ad Ille.
+
+[ENG] 4:34 Jesus said to them, “My food is to do the will of the one who sent me and to complete his work.
+[INA] 4:34 Dice les Jesus: Mi alimento es que Io facera le voluntate de Ille que me inviava e Io terminara su opera.
+
+[ENG] 4:35 Don’t you say, ‘There are four more months and then comes the harvest?’
+[INA] 4:35 Vos non dice que quatro menses esse e le recolta veni?
+
+[ENG] I tell you, look up and see that the fields are already white for harvest!
+[INA] Ecce Io dice a vos, leva!
+
+[ENG] 4:36 The one who reaps receives pay and gathers fruit for eternal life, so that the one who sows and the one who reaps can rejoice together.
+[INA] 4:36 le recoltator percibe le jornal e collige fructo pro le vita eterne ut qui semina e ille que recolta junctemene gaude.
+
+[ENG] 4:37 For in this instance the saying is true, ‘One sows and another reaps.’
+[INA] 4:37 Quia in isto le sententia es ver, que uno es ille qui semina e altero es ille qui recolta.
+
+[ENG] 4:40 So when the Samaritans came to him, they began asking him to stay with them.
+[INA] 4:40 Como, tunc, veniva a Ille le samaritanos, illes Le rogava restar con illes; e Jesus restava illic duo dias.
+
+[ENG] 4:43 After the two days he departed from there to Galilee.
+[INA] 4:43 Post duo dias, Ille sortiva ex illic ad Galilea.
+
+[ENG] 4:51 While he was on his way down, his slaves met him and told him that his son was going to live.
+[INA] 4:51 Dum ille bassava, le domesticos le incontrava, dicente que su filio viviva.
+
+[ENG] 4:53 Then the father realized that it was the very time Jesus had said to him, “Your son will live,” and he himself believed along with his entire household.
+[INA] 4:53 Le patre, alora, sapeva que in ille hora in que Jesus diceva: Le filio tue vive, e credeva ille e tote su casa.
+
+[ENG] 4:54 Jesus did this as his second miraculous sign when he returned from Judea to Galilee.
+[INA] 4:54 De nove Jesus faceva iste secunde miraculo Jesus, veniente ab Judea ad Galilea.
+
+[ENG] 5:1 After this there was a Jewish feast, and Jesus went up to Jerusalem.
+[INA] 5:1 Post isto, era le festa del judeos e Jesus montava a Jerusalem.
+
+[ENG] 5:2 Now there is in Jerusalem by the Sheep Gate a pool called Bethzatha in Aramaic, which has five covered walkways.
+[INA] 5:2 Es in Jerusalem, insimul le Porta del Oves, un piscina nominate in hebreo Bethsada, tenente cinque porticos.
+
+[ENG] 5:3 A great number of sick, blind, lame, and paralyzed people were lying in these walkways.
+[INA] 5:3 In istos extendeva se un multitude de infirmos, cecos, claudios, paralyticos [que sperava le remotion del aqua.
+
+[ENG] 5:13 But the man who had been healed did not know who it was, for Jesus had slipped out, since there was a crowd in that place.
+[INA] 5:4 Nam le angelo del Senior descendeva ad piscina, in certe tempore, e le aqua era removite e le prime que descendeva in piscina, post le motion del aqua, era sanate de qualcunque infirmitate que illes habeva].
+
+[ENG] 5:14 After this Jesus found him at the temple and said to him, “Look, you have become well.
+[INA] 5:14 Post isto, Jesus le incontrava in le templo e le dicev: Reguarda!
+
+[ENG] 5:15 The man went away and informed the Jewish leaders that Jesus was the one who had made him well.
+[INA] 5:15 Le homine iva e diceva a judeos que Jesus es ille que le sanava.
+
+[ENG] 5:16 Now because Jesus was doing these things on the Sabbath, the Jewish leaders began persecuting him.
+[INA] 5:16 E per isto le judeos persequeva Jesus quia isto Ille faceva in sabbato.
+
+[ENG] 5:18 For this reason the Jewish leaders were trying even harder to kill him, because not only was he breaking the Sabbath, but he was also calling God his own Father, thus making himself equal with God.
+[INA] 5:18 Alora per isto plus le judeaos quereva occider Le, nam Ille non solmente frangeva le sabbato sed etiam Ille diceva Deo Patre sue, facente se equal a Deo.
+
+[ENG] 5:19 So Jesus answered them, “I tell you the solemn truth, the Son can do nothing on his own initiative, but only what he sees the Father doing.
+[INA] 5:19 Jesus, alora, les respondeva e diceva: Amen, amen, Io dice a vos: pote le Filio facer ex se mesme nihil excepte illo que vide que le Patre face; quia illo que le Patre face, isto anque le Filio equalmente face.
+
+[ENG] 5:20 For the Father loves the Son and shows him everything he does, and will show him greater deeds than these, so that you will be amazed.
+[INA] 5:20 Quia le Patre ama le Filio e Le monstra tote illo que face e major operas que iste monstrara ut vos admirara.
+
+[ENG] 5:21 For just as the Father raises the dead and gives them life, so also the Son gives life to whomever he wishes.
+[INA] 5:21 Quia como le Patre leva le mortos e vivifica assi anque le Filio vivifica illes que vole.
+
+[ENG] 5:23 so that all people will honor the Son just as they honor the Father.
+[INA] 5:23 ut totes honorara le Filio como illes honora le Patre.
+
+[ENG] The one who does not honor the Son does not honor the Father who sent him.
+[INA] Ille que non honora le Filio non honora le Patre qui Le inviava.
+
+[ENG] 5:24 “I tell you the solemn truth, the one who hears my message and believes the one who sent me has eternal life and will not be condemned, but has crossed over from death to life.
+[INA] 5:24 Amen, amen Io vos dice que ille, que audi mi parola e crede Ille que me inviava, tene vita eterne e non veni ad judicio sed ille ha passate ab le morte ad le vita.
+
+[ENG] 5:25 I tell you the solemn truth, a time is coming—and is now here—when the dead will hear the voice of the Son of God, and those who hear will live.
+[INA] 5:25 Amen, aman, Io vos dice que veni le hora e ora es, quando le mortos audira le voce del Filio de Deo, e illes que audi vivira.
+
+[ENG] 5:27 and he has granted the Son authority to execute judgment, because he is the Son of Man.
+[INA] 5:27 E Le dava le autoritate de facer judicio quia le Filio del Homine es.
+
+[ENG] 5:29 and will come out—the ones who have done what is good to the resurrection resulting in life, and the ones who have done what is evil to the resurrection resulting in condemnation.
+[INA] 5:29 e illes que faceva le cosas bon sortira ad resurrection de vita, illes que le cosas mal practicava, ad resurrection de judicio.
+
+[ENG] 5:30 I can do nothing on my own initiative.
+[INA] 5:30 Io pote facer per me mesme nihil; como Io audi, Io judica e mi judicio juste es quia Io non cerca mi voluntate sed le voluntate de Ille que Me inviava.
+
+[ENG] 5:32 There is another who testifies about me, and I know the testimony he testifies about me is true.
+[INA] 5:32 Altere es ille que testifica circa Me, e Io sape que veridic es le tetimonio que testifica circa Me.
+
+[ENG] 5:35 He was a lamp that was burning and shining, and you wanted to rejoice greatly for a short time in his light.
+[INA] 5:35 Ille era le lampada que arde e brilla e vos voleva exsultar per un hora in su luce.
+
+[ENG] 5:38 nor do you have his word residing in you, because you do not believe the one whom he sent.
+[INA] 5:36 Mais Io tene le testimonio major de Johannes; quia le opera que le Patre Me ha date ut Io los realiza, le mesme cosas que Io face, testifica super Me, que le Patre ha inviate Me.
+
+[ENG] 5:40 but you are not willing to come to me so that you may have life.
+[INA] 5:40 e vos non vole venir a Me ut vos habera vita.
+
+[ENG] 5:42 but I know you, that you do not have the love of God within you.
+[INA] 5:42 mais Io ha cognoscite que vos non tene le amor de Deo in vos mesme.
+
+[ENG] 5:43 I have come in my Father’s name, and you do not accept me.
+[INA] 5:43 Io ha venite in le nomine de mi Patre e vos non recipe Me; si altere veni in su nomine proprie, vos recipe Le.
+
+[ENG] 5:44 How can you believe, if you accept praise from one another and don’t seek the praise that comes from the only God?
+[INA] 5:44 Como pote vos creder si vos recipe le gloria unes de alteres e le gloria, que es apud le unice Deo, vos no cerca?
+
+[ENG] 5:45 “Do not suppose that I will accuse you before the Father.
+[INA] 5:45 No pensa!
+
+[ENG] The one who accuses you is Moses, in whom you have placed your hope.
+[INA] vos que Io incriminara vos coram le Patre; qui incrimina vos es Moises, in qui vos ha expectate.
+
+[ENG] 5:46 If you believed Moses, you would believe me, because he wrote about me.
+[INA] 5:46 Quia si vos crederea in Moises, crederea in Me; quia ille scribeva super Me.
+
+[ENG] 6:1 After this Jesus went away to the other side of the Sea of Galilee (also called the Sea of Tiberias).
+[INA] 6:1 Post iste, Jesus iva ad altere latere del mar de Galilea de Teberiades.
+
+[ENG] 6:2 A large crowd was following him because they were observing the miraculous signs he was performing on the sick.
+[INA] 6:2 E multe multitude Le sequeva, quia videva le signos que Ille faceva in le infirmos.
+
+[ENG] 6:3 So Jesus went on up the mountainside and sat down there with his disciples.
+[INA] 6:3 E Jesus ascendeva ad le montania e illic sedeva con sus discipulos.
+
+[ENG] 6:11 Then Jesus took the loaves, and when he had given thanks, he distributed the bread to those who were seated.
+[INA] 6:11 Alora, Jesus prendeva le panes e, dante gratias, los distribueva inter le inclinatos e equalmente ex pices, quante illes voleva.
+
+[ENG] 6:13 So they gathered them up and filled twelve baskets with broken pieces from the five barley loaves left over by the people who had eaten.
+[INA] 6:13 Alora, illes recolligeva e plenava duodece corbes de fragmentos del cinque panes de hordeo que restava a illes que habeva mangiate.
+
+[ENG] 6:15 Then Jesus, because he knew they were going to come and seize him by force to make him king, withdrew again up the mountainside alone.
+[INA] 6:15 Alora Jesus, cognoscente que illes habeva le intention de venir e prender Le ut facer Le rege, retirava se sol al montania.
+
+[ENG] 6:17 got into a boat, and started to cross the lake to Capernaum.
+[INA] 6:17 e intrante in un barca, iva al altere latere del mar, a Capharnaum.
+
+[ENG] 6:18 By now a strong wind was blowing and the sea was getting rough.
+[INA] 6:18 de plus, sufflante grande vento, le mar era agitate.
+
+[ENG] 6:19 Then, when they had rowed about three or four miles, they caught sight of Jesus walking on the lake, approaching the boat, and they were frightened.
+[INA] 6:19 Alora, illes, habente remate como vinti-cinque o trenta stadios, videva Jesus ambulante super le mar e deveniente vicin al barca, e illes timeva.
+
+[ENG] 6:20 But he said to them, “It is I.
+[INA] 6:20 Mais Ille les diceva: Io esse, vos non teme! plus.
+
+[ENG] 6:21 Then they wanted to take him into the boat, and immediately the boat came to the land where they had been heading.
+[INA] 6:21 Alora, illes voleva Le reciper in le barca, mais, inmediatemente, le barca arrivava al terra a illo que illes iva.
+
+[ENG] 6:23 Other boats from Tiberias came to shore near the place where they had eaten the bread after the Lord had given thanks.
+[INA] 6:23 altere barcas veniva ab Tiberiades circa del loco ubi ille manducava le pan, habente date gratias le Senior.
+
+[ENG] 6:24 So when the crowd realized that neither Jesus nor his disciples were there, they got into the boats and came to Capernaum looking for Jesus.
+[INA] 6:24 Quando, alora, la turba videva que Jesus non era ibi ni su discipulos, illes intrava in le barcas e iva a Capharnaum, cercante Jesus.
+
+[ENG] 6:26 Jesus replied, “I tell you the solemn truth, you are looking for me not because you saw miraculous signs, but because you ate all the loaves of bread you wanted.
+[INA] 6:26 Jesus les respondeva e diceva: Amen, amen Io vos dice, vos cerca Me no quia videva signos sed quia vos manduca ex le panes e era satiate.
+
+[ENG] 6:27 Do not work for the food that disappears, but for the food that remains to eternal life—the food which the Son of Man will give to you.
+[INA] 6:27 Labora!
+
+[ENG] 6:30 So they said to him, “Then what miraculous sign will you perform, so that we may see it and believe you?
+[INA] 6:30 Alora, illes Le diceva: Alora, que signo face tu ut nos Te vide e crede?
+
+[ENG] What will you do?
+[INA] Que opera face tu?
+
+[ENG] 6:31 Our ancestors ate the manna in the wilderness, just as it is written, ‘He gave them bread from heaven to eat.’
+[INA] 6:31 Nostre patres manducava le manna in le deserto, como il es scripte: Deus les dava pan ex celo.
+
+[ENG] 6:35 Jesus said to them, “I am the bread of life.
+[INA] 6:35 Jesus les diceva: Io es le pan del vita; ille que veni ad me absolutemente non habera fame, e ille que crede in me absolutemente non habera sete jammais.
+
+[ENG] 6:36 But I told you that you have seen me and still do not believe.
+[INA] 6:36 Sed Io vos diceva que etiam vos me ha vidite e non crede.
+
+[ENG] 6:38 For I have come down from heaven not to do my own will but the will of the one who sent me.
+[INA] 6:38 alora Io ha descendite ab le celo non pro facer mi voluntate sed le voluntate de Ille que Me inviava.
+
+[ENG] 6:39 Now this is the will of the one who sent me—that I should not lose one person of every one he has given me, but raise them all up at the last day.
+[INA] 6:39 E iste es le voluntate de Ille qui Me inviava que tote illo que Ille me ha date Io non perdera sed Io le resuscitara in le ultime die.
+
+[ENG] 6:42 and they said, “Isn’t this Jesus the son of Joseph, whose father and mother we know?
+[INA] 6:42 e illes diceva: Non iste es Jesus, le filio de Joseph cuje patre e matre nos cognosce?
+
+[ENG] 6:43 Jesus replied, “Do not complain about me to one another.
+[INA] 6:43 Jesus les respondeva e diceva: Non murmura! vos mutuemente.
+
+[ENG] 6:44 No one can come to me unless the Father who sent me draws him, and I will raise him up at the last day.
+[INA] 6:44 Nemo pote venir a Me, si le Patre, qui inviava Me, non le attrahera e Io le resuscitara in le ultime dia.
+
+[ENG] 6:45 It is written in the prophets, ‘And they will all be taught by God.’
+[INA] 6:45 Il es scripte in le prophetas: E totes essera inseniate per Deo; tote ille, que audiva ex le Patre e apprendeva, veni ad Me.
+
+[ENG] 6:47 I tell you the solemn truth, the one who believes has eternal life.
+[INA] 6:47 Amen, amen, Io vos dice: ille que crede tene vita eterne.
+
+[ENG] 6:48 I am the bread of life.
+[INA] 6:48 Io es le pan del vita.
+
+[ENG] 6:49 Your ancestors ate the manna in the wilderness, and they died.
+[INA] 6:49 Vostre patres manducava le manna in le deserto e moriva.
+
+[ENG] 6:50 This is the bread that has come down from heaven, so that a person may eat from it and not die.
+[INA] 6:50 Iste es le pan que ex le celo bassa ut alcuno mangiara de illo e ille non morira.
+
+[ENG] 6:53 Jesus said to them, “I tell you the solemn truth, unless you eat the flesh of the Son of Man and drink his blood, you have no life in yourselves.
+[INA] 6:53 Jesus les diceva: Amen, amen, Io vos dices: Si vos non mangiara le carne del Hijo del Hombre e bibera su sanguine, vos non ha vita in vos mesme.
+
+[ENG] 6:54 The one who eats my flesh and drinks my blood has eternal life, and I will raise him up on the last day.
+[INA] 6:54 Ille qui mangia mi carne e bibe mi sanguine, tene vita eterne e Io le resuscitara, in le ultime die.
+
+[ENG] 6:55 For my flesh is true food, and my blood is true drink.
+[INA] 6:55 Quia mi carne es ver repasto e mi sanguine es ver bibita.
+
+[ENG] 6:56 The one who eats my flesh and drinks my blood resides in me, and I in him.
+[INA] 6:56 Ille que mangia mi carne e bibe mi sanguine permane in Me e Io in ille.
+
+[ENG] 6:57 Just as the living Father sent me, and I live because of the Father, so the one who consumes me will live because of me.
+[INA] 6:57 Como le Patre vivente inviava Me e Io vive mediante le Patre, anque ille que manduca Me vivira mediante Me.
+
+[ENG] 6:58 This is the bread that came down from heaven; it is not like the bread your ancestors ate, but then later died.
+[INA] 6:58 Iste es le pan que ex le celo bassava, non como le patres mangiava e moriva; ille que mangia iste pan, ille vivira pro semper.
+
+[ENG] 6:59 Jesus said these things while he was teaching in the synagogue in Capernaum.
+[INA] 6:59 Ille diceva iste cosas in un synagoga inseniante in Capharnaum.
+
+[ENG] 6:60 Then many of his disciples, when they heard these things, said, “This is a difficult saying!
+[INA] 6:60 Alora, multes de su discipulos, audiente, diceva: Dur es iste parola, qui pote audir lo?
+
+[ENG] 6:61 When Jesus was aware that his disciples were complaining about this, he said to them, “Does this cause you to be offended?
+[INA] 6:61 Mais Jesus, sapente in Se mesme que su discipulos murmurava circa isto, les diceva: Isto scandaliza vos?
+
+[ENG] 6:62 Then what if you see the Son of Man ascending where he was before?
+[INA] 6:62 Si, alora, vide vos le Filio del Homine montante a ubi Ille era primo?
+
+[ENG] 6:63 The Spirit is the one who gives life; human nature is of no help!
+[INA] 6:63 Le Spirito es Ille que vivifica, le carne profita nihil; le parolas que Io vos ha parlate son spirito e son vita.
+
+[ENG] 6:66 After this many of his disciples quit following him and did not accompany him any longer.
+[INA] 6:66 Ab isto multos ex su discipulos vadeva verso postea e jam con Ille non ambulava.
+
+[ENG] 7:1 After this Jesus traveled throughout Galilee.
+[INA] 7:1 E post isto Jesus deambulava in Galilea; quia Ille non voleva deambular in Judea nam le judeos Le cercava pro occider Le.
+
+[ENG] 7:2 Now the Jewish Feast of Shelters was near.
+[INA] 7:2 Le festa del judeos, le del Tabernaculos, era proxime.
+
+[ENG] 7:23 But if a male child is circumcised on the Sabbath so that the law of Moses is not broken, why are you angry with me because I made a man completely well on the Sabbath?
+[INA] 7:22 Per isto Moises ha date a vos le circumcision, non que de Moises es sed del patres, e in sabbato vos circumcida un homine ne le lege de Moises sia disolvite, vos contra Me irrita vos quia Io faceva un homine integre san, in sabbato?
+
+[ENG] 7:25 Then some of the residents of Jerusalem began to say, “Isn’t this the man they are trying to kill?
+[INA] 7:25 Tunc alcunos de illes de Jerusalem diceva: Non es iste quem illes cerca pro occider Le?
+
+[ENG] 7:26 Yet here he is, speaking publicly, and they are saying nothing to him.
+[INA] 7:26 E ecce Ille parla apertemente e illes Le dice nihil.
+
+[ENG] Do the ruling authorities really know that this man is the Christ?
+[INA] Forsan vermente le governatores cognosceva que iste es le christo?
+
+[ENG] 7:27 But we know where this man comes from.
+[INA] 7:27 Mais nos sape de ubi es iste; sed quando le Christo venira, nesuno cognosce de ubi Ille es.
+
+[ENG] 7:28 Then Jesus, while teaching in the temple courts, cried out, “You both know me and know where I come from!
+[INA] 7:28 Alora Jesus critava in le templo inseniante e dicente: Vos cognosce Me e sape de ubi Io esse: e Io non ha venide ab Me mesme, sed Ille que inviava Me es ver, quem vos non cognosce.
+
+[ENG] 7:30 So then they tried to seize Jesus, but no one laid a hand on him, because his time had not yet come.
+[INA] 7:30 Alora illes procurava arrestar Le e nesuno poneva super Ille le mano, nam su hora non habeva arrivate.
+
+[ENG] 7:44 Some of them were wanting to seize him, but no one laid a hand on him.
+[INA] 7:44 e alicunos de illes voleva arrestar Le, ma necuno poneva super Ille le manos.
+
+[ENG] 7:53 [[ And each one departed to his own house.
+[INA] 7:53 E cata uno iva ad lor casa.
+
+[ENG] 8:1 But Jesus went to the Mount of Olives.
+[INA] 8:1 Ma Jesus iva ad le Monte del Olivos.
+
+[ENG] 8:2 Early in the morning he came to the temple courts again.
+[INA] 8:2 In le aurora, de novo, arrivava al templo, [e tote le populo veniva a Ille e sedente les inseniavas].
+
+[ENG] 8:4 and said to Jesus, “Teacher, this woman was caught in the very act of adultery.
+[INA] 8:4 illes Le dice: Magistro, iste femina ha essite surprendite in le acto mesme adulterante.
+
+[ENG] 8:6 (Now they were asking this in an attempt to trap him, so that they could bring charges against him.) Jesus bent down and wrote on the ground with his finger.
+[INA] 8:6 [Ma illes iste diceva tentante Le, ut illes poterea accusar le.] Ma Jesus inclinate a basso, con le digito scribeva super le solo.
+
+[ENG] 8:8 Then he bent over again and wrote on the ground.
+[INA] 8:8 E de novo Jesus inclinante se scribeva in le solo.
+
+[ENG] 8:9 Now when they heard this, they began to drift away one at a time, starting with the older ones, until Jesus was left alone with the woman standing before him.
+[INA] 8:9 E illes audientes exiva uno a uno comenciante ab le plus ancianes e Jesus lassate sol, e le femina qui era in medio.
+
+[ENG] 8:10 Jesus stood up straight and said to her, “Woman, where are they?
+[INA] 8:10 E Jesus levante se la diceva: Femina, ubi son illes?
+
+[ENG] 8:14 Jesus answered, “Even if I testify about myself, my testimony is true, because I know where I came from and where I am going.
+[INA] 8:13 Alora, le phariseos diceva Le: Tu testifica circa te mesme, tu testimonio non es veridic.
+
+[ENG] 8:15 You people judge by outward appearances; I do not judge anyone.
+[INA] 8:14 Jesus les respondeva e diceva: Ben que Io testifico circa me mesme, mi testimonio es veridic quia Io sape de ubi veni e ad ubi vade; ma vos non sape de ubi Io veni o ad ubi vade.
+
+[ENG] 8:16 But if I judge, my evaluation is accurate, because I am not alone when I judge, but I and the Father who sent me do so together.
+[INA] 8:15 Vos judica secondo le carne, Io non judica nesuno.
+
+[ENG] 8:17 It is written in your law that the testimony of two men is true.
+[INA] 8:16 E si Io judica, mi judicio es veridic nam Io non essse sol, ma Io e Ille que me inviava.
+
+[ENG] 8:41 You people are doing the deeds of your father.” Then they said to Jesus, “We were not born as a result of immorality!
+[INA] 8:41 Vos face le obras de vostre patre.
+
+[ENG] 8:42 Jesus replied, “If God were your Father, you would love me, for I have come from God and am now here.
+[INA] 8:42 Jesus les diceva: Si Deo esserea vostre Patre, vos amarea Me, quia Io exiva e ha venite ab Deo quia Io no ha venite ab Me mesme mais Ille Me inviava.
+
+[ENG] 8:43 Why don’t you understand what I am saying?
+[INA] 8:43 Quare vos no cognosce mi conversation?
+
+[ENG] It is because you cannot accept my teaching.
+[INA] Quia vos no pote audir mi parola.
+
+[ENG] 8:44 You people are from your father the devil, and you want to do what your father desires.
+[INA] 8:44 Vos esse ex le patre del diabolo e le desiderios del patre vestre vos vole facer.
+
+[ENG] He was a murderer from the beginning, and does not uphold the truth, because there is no truth in him.
+[INA] Ille era homicida ab le principio, e in le veritate ille no se susteneva jam que in ille no es veritate.
+
+[ENG] Whenever he lies, he speaks according to his own nature, because he is a liar and the father of lies.
+[INA] Quando ille parla le mendacio, parla ex illo que es su proprie, quia ille es mendace e le patre del mendacio.
+
+[ENG] 8:45 But because I am telling you the truth, you do not believe me.
+[INA] 8:45 Mais Io quia dice le veritate, vos no me crede.
+
+[ENG] 8:46 Who among you can prove me guilty of any sin?
+[INA] 8:46 Qui ex vos reprocha Me a causa de peccato?
+
+[ENG] If I am telling you the truth, why don’t you believe me?
+[INA] Si Io dice veritate quare vos no Me crede?
+
+[ENG] 8:47 The one who belongs to God listens and responds to God’s words.
+[INA] 8:47 Ille que es ab Deo audi le parolas de Deo; per isto vos non audi quia vos non esse ex Deo.
+
+[ENG] 8:49 Jesus answered, “I am not possessed by a demon, but I honor my Father—and yet you dishonor me.
+[INA] 8:49 Jesus respondeva: Io demonio no tene mais Io honora mi Patre e vos Me dishonora.
+
+[ENG] 8:50 I am not trying to get praise for myself.
+[INA] 8:50 Mais Io no cerca mi gloria; Ille qui lo cerca e judica existe.
+
+[ENG] 9:1 Now as Jesus was passing by, he saw a man who had been blind from birth.
+[INA] 9:1 E Ille passante videva un homine cec ex nascentia.
+
+[ENG] 9:3 Jesus answered, “Neither this man nor his parents sinned, but he was born blind so that the acts of God may be revealed through what happens to him.
+[INA] 9:3 Respondeva Jesus: Ni iste peccava ni su patres sed ut le obras de Deo sia manifestate in ille.
+
+[ENG] 9:4 We must perform the deeds of the one who sent me as long as it is daytime.
+[INA] 9:4 Il es necessari que nos obra le obras de Ille que me inviava, durante que die es; veni le nocte quando nesuno pote laborar.
+
+[ENG] 9:19 They asked the parents, “Is this your son, whom you say was born blind?
+[INA] 9:19 E le phariseos demandava le patres dicente: Iste es vostre filio quem vos dice que ille nasceva cec?
+
+[ENG] 9:20 So his parents replied, “We know that this is our son and that he was born blind.
+[INA] 9:20 Alora su patres respondeva e diceva: Nos sape que iste es nostre filio e que ille nasceva cec.
+
+[ENG] 9:21 But we do not know how he is now able to see, nor do we know who caused him to see.
+[INA] 9:21 Ma como ora ille vide nos non sape, o qui aperiva su oculos nos no sape; demanda!
+
+[ENG] Ask him, he is a mature adult.
+[INA] le, ille tene etate, ille circa se mesme parlara.
+
+[ENG] 9:22 (His parents said these things because they were afraid of the Jewish religious leaders.
+[INA] 9:22 Su patres diceva iste cosas quia timeva le judeos; quia jam le judeos habeva accordate que si alcuno confessarea que Jesus era christo ille esserea expellite ab le synagoga.
+
+[ENG] 9:30 The man replied, “This is a remarkable thing, that you don’t know where he comes from, and yet he caused me to see!
+[INA] 9:30 Le homine respondeva e les diceva: Nam in isto, illo que esse surprendente, es que vos no sape de ubi ille es e aperiva mi oculos.
+
+[ENG] 9:31 We know that God doesn’t listen to sinners, but if anyone is devout and does his will, God listens to him.
+[INA] 9:31 Nos sape que Deo no audi peccatores ma si alcuno es timorose de Deo e su voluntate face, Deo audi iste.
+
+[ENG] 9:38 He said, “Lord, I believe,” and he worshiped him.
+[INA] 9:38 E ille diceva: Io crede, Senior, e ille Le adorava.
+
+[ENG] 10:2 The one who enters by the door is the shepherd of the sheep.
+[INA] 10:2 ma ille que entra per le porta es pastor del oves.
+
+[ENG] 10:3 The doorkeeper opens the door for him, and the sheep hear his voice.
+[INA] 10:3 Le portero aperi a iste, e le oves audi le voce de iste e voca le oves per lor nomine e extrahe los.
+
+[ENG] 10:4 When he has brought all his own sheep out, he goes ahead of them, and the sheep follow him because they recognize his voice.
+[INA] 10:4 Quando ille jecta foras illos tote proprie, ille vade avante illos, e le oves le seque quia illos cognosce su voce.
+
+[ENG] 10:6 Jesus told them this parable, but they did not understand what he was saying to them.
+[INA] 10:6 Jesus les diceva iste parabola, ma illes no cognosceva que cosas era illos que Ille parlava a illes.
+
+[ENG] 10:7 So Jesus said again, “I tell you the solemn truth, I am the door for the sheep.
+[INA] 10:7 Assi alora Jesus diceva de novo: Amen, amen, Io dice a vos que Io esse le porta del oves.
+
+[ENG] 10:8 All who came before me were thieves and robbers, but the sheep did not listen to them.
+[INA] 10:8 Totes ille que veniva avante me son robatores e banditos, mas le oves no les audiva.
+
+[ENG] 10:9 I am the door.
+[INA] 10:9 Io esse le porta, si alicuno entra trans Me, essera salve, e entrara e exira e incontrara pastura.
+
+[ENG] 10:10 The thief comes only to steal and kill and destroy; I have come so that they may have life, and may have it abundantly.
+[INA] 10:10 Le robator no veni a no esser que pro robar e occider e destruer; Io veniva ut illes habera vita e habera vita abundante.
+
+[ENG] 10:11 “I am the good shepherd.
+[INA] 10:11 Io esse le pastor melior.
+
+[ENG] The good shepherd lays down his life for the sheep.
+[INA] Le pastor melior pone su vita pro le oves.
+
+[ENG] 10:13 Because he is a hired hand and is not concerned about the sheep, he runs away.
+[INA] 10:13 quia salariato es e con respecto al oves no le inporta.
+
+[ENG] 10:15 just as the Father knows me and I know the Father—and I lay down my life for the sheep.
+[INA] 10:15 como le Patre me cognosce e Io cognosce le Patre e mi vita Io pone pro le oves.
+
+[ENG] 10:16 I have other sheep that do not come from this sheepfold.
+[INA] 10:16 E Io tene altere oves que no son de iste ovil; anque il es necessari que Io trahe illos e audira mi voce e devenira un grege e un pastor.
+
+[ENG] 10:17 This is why the Father loves me —because I lay down my life, so that I may take it back again.
+[INA] 10:17 Per isto le Patre Me ama quia Io pone mi vita ut de novo lo prehende.
+
+[ENG] 10:18 No one takes it away from me, but I lay it down of my own free will.
+[INA] 10:18 Necuno subtrahe mi vita sed Io pone illo que es de Me mesme.
+
+[ENG] 10:19 Another sharp division took place among the Jewish people because of these words.
+[INA] 10:19 De novo division deveniva inter le judeos a causa de iste parolas.
+
+[ENG] 10:23 It was winter, and Jesus was walking in the temple area in Solomon’s Portico.
+[INA] 10:23 e Jesus promenava se in le templo, in le portico de Salomon.
+
+[ENG] 10:24 The Jewish leaders surrounded him and asked, “How long will you keep us in suspense?
+[INA] 10:24 Assi alora le judeos Le circumfereva e diceva: usque quando Tu prende nostre anima?
+
+[ENG] 10:25 Jesus replied, “I told you and you do not believe.
+[INA] 10:25 Jesus les respondeva: Io diceva e vos non crede; le obras que Io face in le nomine de mi Patre, istos testifica con respecto a Me.
+
+[ENG] 10:26 But you refuse to believe because you are not my sheep.
+[INA] 10:26 Ma vos no crede quia vos no esse ex oves mie.
+
+[ENG] 10:28 I give them eternal life, and they will never perish; no one will snatch them from my hand.
+[INA] 10:28 e Io les da vita eterne, e de nulle modo illes perece pro semper, e necuno les spoliara ex mi mao.
+
+[ENG] 10:29 My Father, who has given them to me, is greater than all, and no one can snatch them from my Father’s hand.
+[INA] 10:29 Mi Patre, qui es major que totes, ha date Me les e nemo pote spoliar les ex le mano del Patre.
+
+[ENG] 10:31 The Jewish leaders picked up rocks again to stone him to death.
+[INA] 10:31 Le judeos de novo sasiva petras pro lapidar Le.
+
+[ENG] 10:32 Jesus said to them, “I have shown you many good deeds from the Father.
+[INA] 10:32 Jesus les respondeva: Io monstrava vos multe obras bon del Patre, per que obra de illos vos me lapida?
+
+[ENG] 10:39 Then they attempted again to seize him, but he escaped their clutches.
+[INA] 10:39 Alora illes cercava de novo prender Le e Jesus exiva ex lor mano.
+
+[ENG] 10:40 Jesus went back across the Jordan River again to the place where John had been baptizing at an earlier time, and he stayed there.
+[INA] 10:40 E Jesus iva de novo al altere latere del Jordan, al loco ubi Johannes era baptizante in le principio, e permaneva illic.
+
+[ENG] 10:42 And many believed in Jesus there.
+[INA] 10:42 E multos credeva in Ille illic.
+
+[ENG] 11:1 Now a certain man named Lazarus was sick.
+[INA] 11:1 Un tal Lazaro era infirme e era de Betania, le village de Maria e de Marta su soror.
+
+[ENG] 11:8 The disciples replied, “Rabbi, the Jewish leaders were just now trying to stone you to death!
+[INA] 11:8 Le discipulos Le dice: Rabbi, nunc le judeos cercava lapidar Te, e de novo vade tu illic?
+
+[ENG] 11:9 Jesus replied, “Are there not twelve hours in a day?
+[INA] 11:9 Jesus respondeva: No duodece horas del die son?
+
+[ENG] 11:11 After he said this, he added, “Our friend Lazarus has fallen asleep.
+[INA] 11:11 Jesus diceva iste cosas e post isto les dice: Lazaro, nostre amico addormeva se ma Io vade pro eveliar le.
+
+[ENG] 11:15 and I am glad for your sake that I was not there, so that you may believe.
+[INA] 11:15 e Io gaude de que Io no era illic a causa de vos ut vos credera, ma vade!
+
+[ENG] 11:17 When Jesus arrived, he found that Lazarus had been in the tomb four days already.
+[INA] 11:17 Alora veniente Jesus trovava ille qui jam, per quatro dias, era in le tumba.
+
+[ENG] 11:20 So when Martha heard that Jesus was coming, she went out to meet him, but Mary was sitting in the house.
+[INA] 11:20 Alora Marta, quando audiva que Jesus veni, sortiva al incontro de Ille; ma Maria in le casa permaneva sedite.
+
+[ENG] 11:21 Martha said to Jesus, “Lord, if you had been here, my brother would not have died.
+[INA] 11:21 Alora Marta diceva a Jesus: Senior, si Tu esserea hic, mi fratre no haberea morite.
+
+[ENG] 11:26 and the one who lives and believes in me will never die.
+[INA] 11:26 e tote ille que vive e crede in Me, nulle modo moriva pro semper; crede tu isto?
+
+[ENG] 11:29 So when Mary heard this, she got up quickly and went to him.
+[INA] 11:29 E illa, quando audiva, se levava subito e veniva ad Ille.
+
+[ENG] 11:31 Then the people who were with Mary in the house consoling her saw her get up quickly and go out.
+[INA] 11:31 Tunc le judeos qui era con illa in le casa, consolante la, vidente Maria qui tan subito levava se e exiva, la sequeva, pensante que illa iva ad tumba pro plorar illic.
+
+[ENG] 11:33 When Jesus saw her weeping, and the people who had come with her weeping, he was intensely moved in spirit and greatly distressed.
+[INA] 11:33 Alora Jesus quando la videva plorante e le judeos que veniva con illa plorantes, se commoveva in le spirito e se mesme turbava.
+
+[ENG] 11:35 Jesus wept.
+[INA] 11:35 Jesus plorava.
+
+[ENG] 11:37 But some of them said, “This is the man who caused the blind man to see!
+[INA] 11:37 Ma alcunos de illes diceva: No poteva Iste, Ille que aperiva le oculos del ceco, facer que iste no moriva?
+
+[ENG] 11:38 Jesus, intensely moved again, came to the tomb.
+[INA] 11:38 Alora Jesus, de novo commovite in se mesme, veniva al tumba; e era un caverna, e un petra era ponite super illo.
+
+[ENG] 11:41 So they took away the stone.
+[INA] 11:41 Alora illes removeva le petra.
+
+[ENG] 11:44 The one who had died came out, his feet and hands tied up with strips of cloth, and a cloth wrapped around his face.
+[INA] 11:44 Ille que habeva morite exiva, attachate del pedes e del manos con bandas, e su rostro habeva essite involvite con un sudario.
+
+[ENG] 11:46 But some of them went to the Pharisees and reported to them what Jesus had done.
+[INA] 11:46 ma alcunos de illes vadeva ad phariseos e les diceva illo que faceva Jesus.
+
+[ENG] 11:47 So the chief priests and the Pharisees called the council together and said, “What are we doing?
+[INA] 11:47 Alora le summe sacerdotes e le phariseos reuniva le Synedrio e diceva: Que face nos quia iste homine face multe signos?
+
+[ENG] 11:53 So from that day they planned together to kill him.
+[INA] 11:53 Alora dede ille die illes resolveva occider Le.
+
+[ENG] 11:54 Thus Jesus no longer went around publicly among the Judeans, but went away from there to the region near the wilderness, to a town called Ephraim, and stayed there with his disciples.
+[INA] 11:54 Per tanto Jesus ja no ambulava apertemente inter le judeos ma vadeva ab illic ad le region proxime al deserto, ad un citate nominate Ephrain, e illic Jesus permaneva con le discipulos.
+
+[ENG] 11:55 Now the Jewish Feast of Passover was near, and many people went up to Jerusalem from the rural areas before the Passover to cleanse themselves ritually.
+[INA] 11:55 E le pascha del judeos era proxime e multos ex region montava ad Jerusalem antea le pascha pro purificar se mesme.
+
+[ENG] 11:56 Thus they were looking for Jesus, and saying to one another as they stood in the temple courts, “What do you think?
+[INA] 11:56 Alora illes cercava Jesus e mutuemente diceva essente in le templo: Que parece vos?
+
+[ENG] 12:1 Then, six days before the Passover, Jesus came to Bethany, where Lazarus lived, whom he had raised from the dead.
+[INA] 12:1 Alora Jesus antea sex dias del pascha veniva a Betania, ubi era Lazaro quem Jesus levava ex mortos.
+
+[ENG] 12:2 So they prepared a dinner for Jesus there.
+[INA] 12:2 Per tanto, illes faceva un cena illic, e Maria serviva e Lazaro era un del reclinate con Ille.
+
+[ENG] 12:3 Then Mary took three quarters of a pound of expensive aromatic oil from pure nard and anointed the feet of Jesus.
+[INA] 12:3 Tunc Maria, prendente un libra de myrra de nardo pur de multe costo ungueva le pedes de Jesus e essugava con su capillos le pedes de Ille: e le casa era plene del olor del myrra.
+
+[ENG] 12:6 (Now Judas said this not because he was concerned about the poor, but because he was a thief.
+[INA] 12:6 Ma ille diceva isto, no quia circa povres isto le importava ma quia ille era latron e, tenente le bursa, illo que on jactava ille lo porta.
+
+[ENG] 12:9 Now a large crowd of Judeans learned that Jesus was there, and so they came not only because of him but also to see Lazarus whom he had raised from the dead.
+[INA] 12:9 Alora le multe turba del judeos cognosceva que Jesus era illic e veniva no per Jesus sol ma pro vider etiam Lazaro quem resuscitava ex le mortos.
+
+[ENG] 12:11 for on account of him many of the Jewish people from Jerusalem were going away and believing in Jesus.
+[INA] 12:11 quia multos a causa de ille separava se ab judeos e credeva in Jesus.
+
+[ENG] 12:19 Thus the Pharisees said to one another, “You see that you can do nothing.
+[INA] 12:19 Alora assi le phariseos diceva a se mesme: Vos vide que nos no attinge nihil; ecce, le mundo iva post Ille.
+
+[ENG] 12:22 Philip went and told Andrew, and they both went and told Jesus.
+[INA] 12:22 Philippo veni e dice a Andreas; Andreas e Philippo dice a Jesus.
+
+[ENG] 12:23 Jesus replied, “The time has come for the Son of Man to be glorified.
+[INA] 12:23 E Jesus les respondeva dicente: La hora ha arrivate ut le Filio del Homine sia glorificate.
+
+[ENG] 12:24 I tell you the solemn truth, unless a kernel of wheat falls into the ground and dies, it remains by itself alone.
+[INA] 12:24 Amen, amen, Io dice a vos: Si le grano de tritico no mori, cadente in terra, illo sol parmane; ma si illo mori, multe fructo porta.
+
+[ENG] 12:25 The one who loves his life destroys it, and the one who hates his life in this world guards it for eternal life.
+[INA] 12:25 Ille que ama su vita, perde lo, e ille que odia su vita in iste mundo, conservara lo pro le vita eterne.
+
+[ENG] 12:26 If anyone wants to serve me, he must follow me, and where I am, my servant will be too.
+[INA] 12:26 Si alcuno me servi, que ille seque me, e ubi Io esse, illic etiam essera mi servitor; si alicuno me servi, le Patre le honorara.
+
+[ENG] 12:29 The crowd that stood there and heard the voice said that it had thundered.
+[INA] 12:29 Alora le gente que era e audiva diceva que un tonitro habeva sonate.
+
+[ENG] Others said that an angel had spoken to him.
+[INA] Alteros diceva: un angelo Le ha parlate.
+
+[ENG] 12:30 Jesus said, “This voice has not come for my benefit but for yours.
+[INA] 12:30 Jesus respondeva e diceva: Iste voce deveniva no per causa mie, ma per causa vestre.
+
+[ENG] 12:31 Now is the judgment of this world; now the ruler of this world will be driven out.
+[INA] 12:31 Ora le judicio de iste mundo es, ora le governator de iste mundo essera jectate foras.
+
+[ENG] 12:34 Then the crowd responded, “We have heard from the law that the Christ will remain forever.
+[INA] 12:34 Alora le gente Le respondeva: No ha audite ex le lege que le Christo permane pro semper, como dice Tu que esser elevate le Filio del Homine es necessari?
+
+[ENG] 12:35 Jesus replied, “The light is with you for a little while longer.
+[INA] 12:35 Alora Jesus les diceva: etiam, un parve tempore, le luce inter vos es. Ambula!
+
+[ENG] Walk while you have the light, so that the darkness may not overtake you.
+[INA] vos dum vos tene le luce ne le obscuritate vos surprende e ille que ambula in le obscuritate no sape a ubi vade.
+
+[ENG] 12:36 While you have the light, believe in the light, so that you may become sons of light.” When Jesus had said these things, he went away and hid himself from them.
+[INA] 12:36 Dum vos tene le luce, crede!
+
+[ENG] 12:38 so that the word of the prophet Isaiah would be fulfilled.
+[INA] 12:38 ut le parola del propheta Isaias complirea illo que diceva: Senior, qui credeva nostre annuncio?
+
+[ENG] 12:41 Isaiah said these things because he saw Christ’s glory, and spoke about him.
+[INA] 12:41 Iste cosas diceva Isaias quia ille videva le gloria de Ille e parlava circa Ille.
+
+[ENG] 12:43 For they loved praise from men more than praise from God.
+[INA] 12:43 quia illes amava plus le gloria del homines que le gloria de Deo.
+
+[ENG] 12:45 and the one who sees me sees the one who sent me.
+[INA] 12:45 e ille qui Me vide, vide ille qui Me inviava.
+
+[ENG] 12:46 I have come as a light into the world, so that everyone who believes in me should not remain in darkness.
+[INA] 12:46 Io como luce ha venite al mundo ut tote que crede in Me no permane in le obscuritate.
+
+[ENG] 12:47 If anyone hears my words and does not obey them, I do not judge him.
+[INA] 12:47 E si alcuno audi mi parolas e non los compli, Io no le judica ut Io no veni al mundo pro judicar lo ma pro salvar le mundo.
+
+[ENG] 12:48 The one who rejects me and does not accept my words has a judge; the word I have spoken will judge him at the last day.
+[INA] 12:48 Ille que repulsa Me e no recipe mi parolas, tene ille qui le judica.
+
+[ENG] 12:49 For I have not spoken from my own authority, but the Father himself who sent me has commanded me what I should say and what I should speak.
+[INA] 12:49 Quia Io no parlava ex me mesme, ma le Patre que Me inviava, Ille Me ha date commandamento: illo que Io debera dicer e illo que, parlar.
+
+[ENG] 12:50 And I know that his commandment is eternal life.
+[INA] 12:50 E Io sape que su commandamento es vita eterna.
+
+[ENG] 13:1 Just before the Passover Feast, Jesus knew that his time had come to depart from this world to the Father.
+[INA] 13:1 E antea le festa del pascha, sapente Jesus que veniva su hora ut Ille passara ab iste mundo ad Patre, habente amate le suos que era in le mundo, Ille les amava usque le plenitute.
+
+[ENG] 13:5 He poured water into the washbasin and began to wash the disciples’ feet and to dry them with the towel he had wrapped around himself.
+[INA] 13:5 postea jecta aqua in le bassino e comenciava lavar le pedes del discipulos e siccar los con le toalia con le qual Ille era cingite.
+
+[ENG] 13:10 Jesus replied, “The one who has bathed needs only to wash his feet, but is completely clean.
+[INA] 13:10 Dice le Jesus: Ille que ha baniate se, no tene necesitate de lavar se [excepto le pedes], ma ille es munde tote; e vos esse mundo ma no totos.
+
+[ENG] 13:11 (For Jesus knew the one who was going to betray him.
+[INA] 13:11 Quia Jesus cognosceva quem ille qui transfereva Le; per isto diceva: No totos munde esse.
+
+[ENG] 13:12 So when Jesus had washed their feet and put his outer clothing back on, he took his place at the table again and said to them, “Do you understand what I have done for you?
+[INA] 13:12 Alora quando Jesus lavava lor pedes e prendeva su mantello e de novo reclinava se, diceva les: Cognosce vos que Io ha facite a vos?
+
+[ENG] 13:13 You call me ‘Teacher’ and ‘Lord,’ and do so correctly, for that is what I am.
+[INA] 13:13 Vos apella Me: Le Magistro e le Senior e dice ben quia Io esse.
+
+[ENG] 13:14 If I then, your Lord and Teacher, have washed your feet, you too ought to wash one another’s feet.
+[INA] 13:14 Alora si Io, le Senior e le Magistro, lavava vostre pedes, vos etiam debe lavar le pedes le unes al alteres.
+
+[ENG] 13:15 For I have given you an example —you should do just as I have done for you.
+[INA] 13:15 Quia Io dava exemplo a vos ut como io faceva, vos etiam facera.
+
+[ENG] 13:16 I tell you the solemn truth, the slave is not greater than his master, nor is the one who is sent as a messenger greater than the one who sent him.
+[INA] 13:16 Amen, amen, Io dice vos, un famulo no es major que su senior, e un inviato, no major que ille que le inviava.
+
+[ENG] 13:17 If you understand these things, you will be blessed if you do them.
+[INA] 13:17 Si vos sape iste cosas, vos esse felice si face los.
+
+[ENG] 13:19 I am telling you this now, before it happens, so that when it happens you may believe that I am he.
+[INA] 13:18 Io no dice con respecto a tote vos, Io sape quem Io eligeva; ma ut Scriptura se compli: ille que mangia mi pan, levava su talon contra me.
+
+[ENG] 13:22 The disciples began to look at one another, worried and perplexed to know which of them he was talking about.
+[INA] 13:22 Le discipulos reguardava mutualmente, essente perplexe circa ille de qui Jesus parla.
+
+[ENG] 13:23 One of his disciples, the one Jesus loved, was at the table to the right of Jesus in a place of honor.
+[INA] 13:23 Un de su discipulos era reclinate in le sino de Jesus, quem amava Jesus.
+
+[ENG] 13:24 So Simon Peter gestured to this disciple to ask Jesus who it was he was referring to.
+[INA] 13:24 Alora Simon Petro face signales a iste e dice le: Dice!
+
+[ENG] 13:26 Jesus replied, “It is the one to whom I will give this piece of bread after I have dipped it in the dish.” Then he dipped the piece of bread in the dish and gave it to Judas Iscariot, Simon’s son.
+[INA] 13:26 Alora Jesus responde: Ille es a qual io mollia le buccata e da a ille.
+
+[ENG] 13:27 And after Judas took the piece of bread, Satan entered into him.
+[INA] 13:27 E post le buccata, Satanas tunc intrava in ille.
+
+[ENG] 13:30 Judas took the piece of bread and went out immediately.
+[INA] 13:30 Alora ille, habente prendite le boccata, exiva subito e era nocte.
+
+[ENG] 13:32 If God is glorified in him, God will also glorify him in himself, and he will glorify him right away.
+[INA] 13:32 Si Deo era glorificate in Ille, etiam Deo glorificara Le in Ille e subito Le glorificara.
+
+[ENG] 13:33 Children, I am still with you for a little while.
+[INA] 13:33 Filiettos, ancora, un pauco con vos Io esse; vos cercara me, e, como Io diceva al judeos: Ubi Io vade, vos no pote venir, etiam Io dice ora vos.
+
+[ENG] 13:34 “I give you a new commandment—to love one another.
+[INA] 13:34 Un commandamento nove Io da vos que vos amara unes ad alteres, como Io amava vos, que etiam vos unes amara alteres.
+
+[ENG] 13:37 Peter said to him, “Lord, why can’t I follow you now?
+[INA] 13:37 Petrus dice Le: Senior, cur no pote io sequer Te ora?
+
+[ENG] 14:10 Do you not believe that I am in the Father, and the Father is in me?
+[INA] 14:10 No crede tu que Io in le Patre esse e le Patre in Me es?
+
+[ENG] 14:11 Believe me that I am in the Father, and the Father is in me, but if you do not believe me, believe because of the miraculous deeds themselves.
+[INA] 14:11 Crede!
+
+[ENG] 14:13 And I will do whatever you ask in my name, so that the Father may be glorified in the Son.
+[INA] 14:13 e qualcun cosa que vos pete in mi nomine, illo Io facera ut le Patre sia glorificate in le Filio.
+
+[ENG] 14:14 If you ask me anything in my name, I will do it.
+[INA] 14:14 Si vos pete Me alique in mi nomine, Io lo facera.
+
+[ENG] 14:15 “If you love me, you will obey my commandments.
+[INA] 14:15 Si vos ama Me, vos complira mi commandamentos.
+
+[ENG] 14:17 the Spirit of truth, whom the world cannot accept, because it does not see him or know him.
+[INA] 14:17 le Spirito del veritate quem le mundo no pote reciper quia no vide ni cognosce; vos Le cognosce quia Ille con vos permane e in vos essera.
+
+[ENG] 14:18 “I will not abandon you as orphans, I will come to you.
+[INA] 14:18 Io no vos dessara orphanos, Io veni ad vos.
+
+[ENG] 14:19 In a little while the world will not see me any longer, but you will see me; because I live, you will live too.
+[INA] 14:19 Ancora un pauc tempore e le mundo no plus Me videra, ma vos vide me; quia Io vive etiam vos vivera.
+
+[ENG] 14:20 You will know at that time that I am in my Father and you are in me and I am in you.
+[INA] 14:20 In ille die vos cognoscera que Io esse in mi Patre e vos, in Me e Io, in vos.
+
+[ENG] 14:21 The person who has my commandments and obeys them is the one who loves me.
+[INA] 14:21 Ille que tene mi commandamentos e compli los, ille es qui Me ama, e ille que Me ama essera amate per mi Patre e Io le amara e Io Me manifestara a ille.
+
+[ENG] 14:24 The person who does not love me does not obey my words.
+[INA] 14:24 Ille que no Me ama non compli mi parolas e le parola que vos audi no es mie ma del Patre qui Me inviava.
+
+[ENG] 14:25 “I have spoken these things while staying with you.
+[INA] 14:25 Io con vos permanente ha parlate iste cosas a vos.
+
+[ENG] 14:26 But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you everything, and will cause you to remember everything I said to you.
+[INA] 14:26 Ma le Consolator, le Spirito Sancte Quem le Patre inviara in mi nombre, Ille a vos inseniara tote le cosas e recordara vos tote le cosas que Io diceva a vos.
+
+[ENG] 14:27 “Peace I leave with you; my peace I give to you; I do not give it to you as the world does.
+[INA] 14:27 Io dessa pace a vos, mi pace Io da a vos; no como le mundo da lo, Io da a vos.
+
+[ENG] 14:28 You heard me say to you, ‘I am going away and I am coming back to you.’
+[INA] 14:28 Vos audiva que Io diceva vos: Io vade e veni a vos.
+
+[ENG] If you loved me, you would be glad that I am going to the Father, because the Father is greater than I am.
+[INA] Si vos amarea Me, vos gauderea de que Io vade al Patre, quia le Patre es major que Io.
+
+[ENG] 14:29 I have told you now before it happens, so that when it happens you may believe.
+[INA] 14:29 E ora Io lo ha decite a vos ante que il devenira ut quando il devenira, vos credera.
+
+[ENG] 14:31 but I am doing just what the Father commanded me, so that the world may know that I love the Father.
+[INA] 14:31 ma ut le mundo cognoscera que Io ama le Patre; e como le Patre Me incargava, assi Io face. Leva! vos, vade!
+
+[ENG] Get up, let us go from here.
+[INA] nos ex hic.
+
+[ENG] 15:1 “I am the true vine and my Father is the gardener.
+[INA] 15:1 Io esse le vite ver e mi Patre es le labrator.
+
+[ENG] 15:2 He takes away every branch that does not bear fruit in me.
+[INA] 15:2 Tote sarmento in Me que no porta fructo le Patre lo subtrahe e tote sarmento que da fructo lo limpia ut illo portara plus fructo.
+
+[ENG] 15:3 You are clean already because of the word that I have spoken to you.
+[INA] 15:3 Ja vos esse munde per le parola que Io vos he parlato.
+
+[ENG] 15:4 Remain in me, and I will remain in you.
+[INA] 15:4 Permane!
+
+[ENG] 15:5 “I am the vine; you are the branches.
+[INA] 15:5 Io esse le vite e vos, le sarmentos.
+
+[ENG] The one who remains in me—and I in him—bears much fruit, because apart from me you can accomplish nothing.
+[INA] Ille, que permane in Me e Io in ille, iste pote portar multe fructo quia extra Me vos pote facer nihil.
+
+[ENG] 15:6 If anyone does not remain in me, he is thrown out like a branch, and dries up; and such branches are gathered up and thrown into the fire, and are burned up.
+[INA] 15:6 Si alcuno no permane in Me es jectate foras como le sarmento e se sicca e ille los recoli, los jectava al foco e illos arde.
+
+[ENG] 15:7 If you remain in me and my words remain in you, ask whatever you want, and it will be done for you.
+[INA] 15:7 Si vos permane in Me e mi parola permane in vos, pete!
+
+[ENG] 15:8 My Father is honored by this, that you bear much fruit and show that you are my disciples.
+[INA] 15:8 In isto era glorificate mi Patre in que vos multe fructo portara e devenira mi discipulos.
+
+[ENG] 15:10 If you obey my commandments, you will remain in my love, just as I have obeyed my Father’s commandments and remain in his love.
+[INA] 15:10 Si vos compli le commandamentos de mi Patre, vos permane in mi amor, como Io he complite le commandamentos de mi Patre e Io permane in su amor.
+
+[ENG] 15:11 I have told you these things so that my joy may be in you, and your joy may be complete.
+[INA] 15:11 Io ha parlate iste cosas a vos ut mi gaudio sia in vos e vostre gaudio sia plenate.
+
+[ENG] 15:12 My commandment is this—to love one another just as I have loved you.
+[INA] 15:12 Iste es mi commandamento que vos le unes ama vos le alteres como Io vos amava.
+
+[ENG] 15:13 No one has greater love than this—that one lays down his life for his friends.
+[INA] 15:13 Nesuno tene major amor que iste, que alcuno pone su vita pro su amicos.
+
+[ENG] 15:14 You are my friends if you do what I command you.
+[INA] 15:14 Vos esse mi amicos, si vos face illo que Io ordena a vos.
+
+[ENG] 15:15 I no longer call you slaves, because the slave does not understand what his master is doing.
+[INA] 15:15 Io ja no dice vos servos quia le servo no sape que face su senior; ma Io ha decite amicos quia Io ha facite cognoscite pro vos tote illo que Io audiva ab mi Patre.
+
+[ENG] 15:16 You did not choose me, but I chose you and appointed you to go and bear fruit, fruit that remains, so that whatever you ask the Father in my name he will give you.
+[INA] 15:16 Vos no eligeva Me ma Io eligeva vos e poneva vos ut vos vade e porta fructo e vostre fructo permane ut le Patre dara a vos tote illo que vos pete in mi nomine.
+
+[ENG] 15:17 This I command you—to love one another.
+[INA] 15:17 Io vos manda isto: que vos le unes ama vos le alteres.
+
+[ENG] 15:18 “If the world hates you, be aware that it hated me first.
+[INA] 15:18 Si le mundo odia vos, sape!
+
+[ENG] 15:19 If you belonged to the world, the world would love you as its own.
+[INA] 15:19 Si vos esserea del mundo, le mundo amarea illo que es sue, ma quia vos no esse del mundo per le contrari Io eligeva vos ex le mundo, per isto le mundo odia vos.
+
+[ENG] 15:20 Remember what I told you, ‘A slave is not greater than his master.’
+[INA] 15:20 Face!
+
+[ENG] 15:21 But they will do all these things to you on account of my name, because they do not know the one who sent me.
+[INA] 15:21 Ma illes facera isto toto con vos a causa mie quia illes no cognosce Ille que Me inviava.
+
+[ENG] 15:22 If I had not come and spoken to them, they would not be guilty of sin.
+[INA] 15:22 Si Io no haberea venite e non haberea parlate, illes no haberea peccato, ma ora illes no habe excusa circa lor peccato.
+
+[ENG] 15:23 The one who hates me hates my Father too.
+[INA] 15:23 Ille que Me odia etiam odia mi Patre.
+
+[ENG] 15:24 If I had not performed among them the miraculous deeds that no one else did, they would not be guilty of sin.
+[INA] 15:24 Si Io non habeva facite inter illes le obras que necuno habeva facite, non tenerea peccato, ma ora non solo illes ha vidite sed etiam ha odiate tanto Me como le Patre.
+
+[ENG] 15:25 Now this happened to fulfill the word that is written in their law, ‘They hated me without reason.’
+[INA] 15:25 Ma ut parola scripta in lor lege se compli: Illes odiava me sin motivo.
+
+[ENG] 15:27 and you also will testify, because you have been with me from the beginning.
+[INA] 15:27 e etiam vos testificara quia desde le principio vos esse con me.
+
+[ENG] 16:1 “I have told you all these things so that you will not fall away.
+[INA] 16:1 Io he parlate a vos iste cosas ut vos non offendera vos.
+
+[ENG] 16:2 They will put you out of the synagogue, yet a time is coming when the one who kills you will think he is offering service to God.
+[INA] 16:2 Illes facera vos excludite ex le synagoga.
+
+[ENG] 16:3 They will do these things because they have not known the Father or me.
+[INA] 16:3 E illes facera isto quia no cognosceva le Patre ni Me.
+
+[ENG] 16:4 But I have told you these things so that when their time comes, you will remember that I told you about them.
+[INA] 16:4 Ma Io ha parlate iste cosas a vos ut, quando lor hora veni, vos recordara los quia Io diceva los a vos.
+
+[ENG] I did not tell you these things from the beginning because I was with you.
+[INA] Ma Io non diceva vos ab le principio quia Io era con vos.
+
+[ENG] 16:5 But now I am going to the one who sent me, and not one of you is asking me, ‘Where are you going?’
+[INA] 16:5 Ma ora Io vade a Ille que inviava Me, e necuno de vos interroga Me: A ubi vade Tu?
+
+[ENG] 16:6 Instead your hearts are filled with sadness because I have said these things to you.
+[INA] 16:6 Ma quia Io ha parlate iste cosas a vos, le tristitia ha plenate vostre corde.
+
+[ENG] 16:11 and concerning judgment, because the ruler of this world has been condemned.
+[INA] 16:11 e per altere, del judicio quia le governante de iste mundo ha essite judicate.
+
+[ENG] 16:13 But when he, the Spirit of truth, comes, he will guide you into all truth.
+[INA] 16:13 ma quando veni Ille, le Spirito del veritate, guidara vos al veritate tote; quia Ille no parlara circa se mesme, sed quanto Ille audi, parlara, e annunciara le proxime cosas a vos.
+
+[ENG] 16:14 He will glorify me, because he will receive from me what is mine and will tell it to you.
+[INA] 16:14 Ille glorificara me quia ex le mie prendera e annunciara lo a vos.
+
+[ENG] 16:15 Everything that the Father has is mine; that is why I said the Spirit will receive from me what is mine and will tell it to you.
+[INA] 16:15 Tote quanto tene le Patre es mie; per isto Io diceva a vos que Ille prendera ex le mie e annunciara a vos.
+
+[ENG] 16:18 So they kept on repeating, “What is the meaning of what he says, ‘In a little while’?
+[INA] 16:18 Alora illes diceva: Le “un parve tempore” que es isto que dice?
+
+[ENG] 16:19 Jesus could see that they wanted to ask him about these things, so he said to them, “Are you asking each other about this—that I said, ‘In a little while you will not see me; again after a little while, you will see me’?
+[INA] 16:19 Jesus cognosceva que illes voleva Le interrogar e Ille les diceva: circa isto vos cerca, le unes con le alteres, quia Io diceva: “Un parve tempore e vos ja no Me videra e de novo un parve tempore e vos Me videra”?
+
+[ENG] 16:20 I tell you the solemn truth, you will weep and wail, but the world will rejoice; you will be sad, but your sadness will turn into joy.
+[INA] 16:20 Amen, amen, Io dice vos que vos plorara e lamentara e le mundo allegrara; vos attristara, ma le tristitia vestre devenira ad gaudio.
+
+[ENG] 16:21 When a woman gives birth, she has distress because her time has come, but when her child is born, she no longer remembers the suffering because of her joy that a human being has been born into the world.
+[INA] 16:21 Le femina, quando es in parto, tene tristitia, quia su hora veniva, ma quando pare le infante, ja no recorda su angustia a causa del gaudio que un homine nasceva ad le mundo.
+
+[ENG] 16:22 So also you have sorrow now, but I will see you again, and your hearts will rejoice, and no one will take your joy away from you.
+[INA] 16:22 E alora vos nunc tene tristitia; ma de novo Io videra vos e vostre corde allegrara e nesuno subtrahera vostre gaudio.
+
+[ENG] 16:23 At that time you will ask me nothing.
+[INA] 16:23 E in ille die vos no me interrogara nihil.
+
+[ENG] 16:24 Until now you have not asked for anything in my name.
+[INA] 16:24 Usque ora vos no demansava nihil; demanda!
+
+[ENG] Ask and you will receive it, so that your joy may be complete.
+[INA] vois e vos recipera ut gadio vestre sia complete.
+
+[ENG] 16:25 “I have told you these things in obscure figures of speech; a time is coming when I will no longer speak to you in obscure figures, but will tell you plainly about the Father.
+[INA] 16:25 Io ha parlate iste cosas a vos in parabolas; un hora veni quando Io ja no parlara a vos in parabolas, ma clarmente Io annunciara circa le Patre a vos.
+
+[ENG] 16:27 For the Father himself loves you, because you have loved me and have believed that I came from God.
+[INA] 16:27 quia le Patre mesme vos ama quia vos ha amate Me e ha credite que Io ex le Patre exiva.
+
+[ENG] 16:29 His disciples said, “Look, now you are speaking plainly and not in obscure figures of speech!
+[INA] 16:29 Su discipulos dice: Ecce!
+
+[ENG] 16:30 Now we know that you know everything and do not need anyone to ask you anything.
+[INA] 16:30 Ora nos sape que Tu sape tote le cosas e Tu no tene necessitate que alcuno Te demanda; in isto nos sape que Tu ex Deo exiva.
+
+[ENG] 16:31 Jesus replied, “Do you now believe?
+[INA] 16:31 Jesus les respondeva: Ora crede vos?
+
+[ENG] 16:32 Look, a time is coming—and has come—when you will be scattered, each one to his own home, and I will be left alone.
+[INA] 16:32 Ecce, le hora veni e ha arrivate in le qual vos essera sparcite ad le proprie casa e vos Me sol lassa; e Io no es sol quia le Patre es con Me.
+
+[ENG] 16:33 I have told you these things so that in me you may have peace.
+[INA] 16:33 Io a vos ha parlate iste cosas ut vos habera pace in Me.
+
+[ENG] 17:1 When Jesus had finished saying these things, he looked upward to heaven and said, “Father, the time has come.
+[INA] 17:1 Jesus parlava iste cosas e, elevante su oculos ad le celo, diceva: Patre, le hora ha arrivate; glorifica!
+
+[ENG] 17:2 just as you have given him authority over all humanity, so that he may give eternal life to everyone you have given him.
+[INA] 17:2 ja que Tu ha date Le capacitate super tote carne ut Ille dara vita eterna a tote lo que Tu Le ha date.
+
+[ENG] 17:3 Now this is eternal life —that they know you, the only true God, and Jesus Christ, whom you sent.
+[INA] 17:3 Alora isto es la vita eterna, que illes Te cognosca, le unic Deo ver e Ille quem tu inviava Jesus Christo.
+
+[ENG] 17:5 And now, Father, glorify me at your side with the glory I had with you before the world was created.
+[INA] 17:5 ora, glorifica!
+
+[ENG] 17:6 “I have revealed your name to the men you gave me out of the world.
+[INA] 17:6 Io manifestava tu nomine al homines ex le mundo le quales tu Me dava.
+
+[ENG] 17:8 because I have given them the words you have given me.
+[INA] 17:8 alora, le parolas que Tu Me dava Io les ha date e illes recipeva e cognosceva vermente que de parte de Te Io exiva e credeva que Tu Me inviava.
+
+[ENG] 17:10 Everything I have belongs to you, and everything you have belongs to me, and I have been glorified by them.
+[INA] 17:10 como tote illo mie es tue e tote illo tue es mie e Io ha essite glorificate in illes.
+
+[ENG] 17:11 I am no longer in the world, but they are in the world, and I am coming to you.
+[INA] 17:11 E Io ja no esse in le mundo, e illes in le mundo son, e Io ad Te vade.
+
+[ENG] Holy Father, keep them safe in your name that you have given me, so that they may be one just as we are one.
+[INA] Pater sancte, retene illes que tu Me ha date in tu nomine ut illes sia un como Nos.
+
+[ENG] 17:12 When I was with them I kept them safe and watched over them in your name that you have given me.
+[INA] 17:12 Quando Io era con illes, Io conservava, in tu nomine, illes que tu Me ha date, e guardava les e nesuno de illes perdeva se excepto le filio de perdition ut Scriptura se complirea.
+
+[ENG] 17:13 But now I am coming to you, and I am saying these things in the world, so they may experience my joy completed in themselves.
+[INA] 17:13 Ma ora Io vade a Te e Io iste cosas parla in le mundo ut illes tene le gaudio mie complete in se mesme.
+
+[ENG] 17:14 I have given them your word, and the world has hated them, because they do not belong to the world, just as I do not belong to the world.
+[INA] 17:14 Io les ha date tu parola, e le mundo les odiava quia illes no son del mundo como Io no esse del mundo.
+
+[ENG] 17:15 I am not asking you to take them out of the world, but that you keep them safe from the evil one.
+[INA] 17:15 Io no roga que Tu les subtrahe ex le mundo, ma que Tu protege del maligno.
+
+[ENG] 17:16 They do not belong to the world just as I do not belong to the world.
+[INA] 17:16 Illes no son del mundo como Io no esse del mundo.
+
+[ENG] 17:17 Set them apart in the truth; your word is truth.
+[INA] 17:17 Santifica!
+
+[ENG] 17:19 And I set myself apart on their behalf, so that they too may be truly set apart.
+[INA] 17:19 e pro illes Io Me mesme consacra ut illes etiam sia consecrate in veritate.
+
+[ENG] 17:21 that they will all be one, just as you, Father, are in me and I am in you.
+[INA] 17:21 ut totes sia un como Tu, Patre, in Me e Io in Te, ut etiam illes in Nos sia, ut le mundo credera que Tu Me inviava.
+
+[ENG] 17:23 I in them and you in me—that they may be completely one, so that the world will know that you sent me, and you have loved them just as you have loved me.
+[INA] 17:23 Io in illes e Tu in Me ut illes sia perfectionate ad un ut le mundo cognoscera que Tu Me inviava e les amava les como Tu Me amava.
+
+[ENG] 17:24 “Father, I want those you have given me to be with me where I am, so that they can see my glory that you gave me because you loved me before the creation of the world .
+[INA] 17:24 Patre, illo que Tu ha date me, Io desira que ubi Io esse etiam illes essera con Me ut illes videra mi gloria que Tu Me ha date quia Tu Me amava antea le fundation del mundo.
+
+[ENG] 18:1 When he had said these things, Jesus went out with his disciples across the Kidron Valley.
+[INA] 18:1 Jesus, habente dicite iste cosas, exiva con su discipulos ad altere latere del torrente del Cedron, ubi era un horto in illo que intrava Ille e su dispiculos.
+
+[ENG] 18:3 So Judas obtained a squad of soldiers and some officers of the chief priests and Pharisees.
+[INA] 18:3 In consequentia, Judas prendente le cohorte e le servitores del summe sacerdote e del phariseos, veni illic con lanternas, lampas e armas.
+
+[ENG] 18:6 So when Jesus said to them, “I am he,” they retreated and fell to the ground.
+[INA] 18:6 Alora quando Jesus les diceva: Io esse, illes retrocedeva e inclinava ad terra.
+
+[ENG] 18:10 Then Simon Peter, who had a sword, pulled it out and struck the high priest’s slave, cutting off his right ear.
+[INA] 18:10 Tunc Simon Petro que habeva un machete, traheva lo e feriva le domestico del summe sacerdote e secava su auricula dextere; e le nomine del domestico era Malco.
+
+[ENG] 18:11 But Jesus said to Peter, “Put your sword back into its sheath!
+[INA] 18:11 Alora Jesus diceva a Petro: Placia!
+
+[ENG] 18:15 Simon Peter and another disciple followed them as they brought Jesus to Annas.
+[INA] 18:15 E Simon Petro e altere discipulo sequeva Jesus.
+
+[ENG] 18:16 But Peter was left standing outside by the door.
+[INA] 18:16 ma Petro era foras juxta le porta.
+
+[ENG] So the other disciple who was acquainted with the high priest came out and spoke to the slave girl who watched the door, and brought Peter inside.
+[INA] Alora le altere discipulo cognoscite del summe sacerdote exiva e parlava al portera e faceva intrar Petro.
+
+[ENG] 18:18 (Now the slaves and the guards were standing around a charcoal fire they had made, warming themselves because it was cold.
+[INA] 19:18 ubi illes crucifigeva Le e con Ille alteros duo, in iste latere e in altere latere, e in medio Jesus.
+
+[ENG] 18:19 While this was happening, the high priest questioned Jesus about his disciples and about his teaching.
+[INA] 19:19 E etiam Pilato scribeva un titulo e lo poneva super le cruce, e era scripte: JESUS NAZAREN LE REGE DEL JUDEOS.
+
+[ENG] 18:20 Jesus replied, “I have spoken publicly to the world.
+[INA] 19:20 Alora multos del judeos legeva iste titulo quia le loco ubi esseva crucificate Jesus era proxime al citate e era scripte in hebreo, in latino e in greco.
+
+[ENG] 20:3 Then Peter and the other disciple set out to go to the tomb.
+[INA] 20:2 Alora, illa curre e vade ad Simon Petro e ad altere discipulo quem Jesus amava e dice les: Illes portava le Senior ex le sepulchro e nos no sape ubi poneva le.
+
+[ENG] 20:4 The two were running together, but the other disciple ran faster than Peter and reached the tomb first.
+[INA] 20:3 Alora Petro e le altere discipulo exiva e arrivava ad sepulchro.
+
+[ENG] 20:6 Then Simon Peter, who had been following him, arrived and went right into the tomb.
+[INA] 20:5 e inclinante se pro reguardar, ille vide le bandas collocate sed ille no intrava.
+
+[ENG] 20:8 Then the other disciple, who had reached the tomb first, came in, and he saw and believed.
+[INA] 20:7 e le sudario que era super su capite, no con le bandas ma a parte inrolate in un loco.
+
+[ENG] 20:10 So the disciples went back to their homes.
+[INA] 20:10 Alora le discipulos, de novo, partiva a lor casa.
+
+[ENG] 20:11 But Mary stood outside the tomb weeping.
+[INA] 20:11 Ma Maria era, de pede juxta le sepulchro foras, plorante.
+
+[ENG] 20:12 And she saw two angels in white sitting where Jesus’ body had been lying, one at the head and one at the feet.
+[INA] 20:12 e illa vide duo angelos, con albe vestimentos, sedite, une in le capite e altere in le pedes, ubi jaceva le corpore de Jesus.
+
+[ENG] 20:18 Mary Magdalene came and informed the disciples, “I have seen the Lord!” And she told them what Jesus had said to her.
+[INA] 20:14 Illa, habente dicite iste cosas, tornava retro e vide Jesus e illa no sapeva que es Jesus.
+
+[ENG] 20:19 On the evening of that day, the first day of the week, the disciples had gathered together and locked the doors of the place because they were afraid of the Jewish leaders.
+[INA] 20:19 Alora, essente le crepusculo in le die illo, le prime del septimana, e ubi le discipulos era, le portas serrate per timor del judeos, Jesus veniva e se poneva presente in medio eles dice: Pace a vos.
+
+[ENG] 20:20 When he had said this, he showed them his hands and his side.
+[INA] 20:20 E isto dicente, Ille les monstra tanto le manos como le latere.
+
+[ENG] Then the disciples rejoiced when they saw the Lord.
+[INA] Alora, le discipulos gaudeva quando videva le Senior.
+
+[ENG] 20:21 So Jesus said to them again, “Peace be with you.
+[INA] 20:21 Alora Jesus les diceva de nove: Pace a vos; como le Patre Me ha inviate, etiam Io vos invia.
+
+[ENG] 20:22 And after he said this, he breathed on them and said, “Receive the Holy Spirit.
+[INA] 20:22 E isto dicente, Ille suffrava e les dice: recipe!
+
+[ENG] 20:24 Now Thomas (called Didymus), one of the twelve, was not with them when Jesus came.
+[INA] 20:24 Ma Thomas, uno del Duodece, le apellate didimo, no era con illes, quando Jesus veniva.
+
+[ENG] 20:29 Jesus said to him, “Have you believed because you have seen me?
+[INA] 20:29 Jesus le dice: Quia tu Me ha vidite , tu ha credite?
+
+[ENG] 20:31 But these are recorded so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name.
+[INA] 20:31 ma istos ha essete scribite ut vos credera que Jesus es le Christo, le Filio de Deo e ut, vos credente, habera vita in su nomine.
+
+[ENG] 21:4 When it was already very early morning, Jesus stood on the beach, but the disciples did not know that it was Jesus.
+[INA] 21:2 Era juncte Simon Petro e Thomas, appellate didimo e Nathanael de Cana de Galilea e le filios de Zebedeo e alteros duo de su discipulos.
+
+[ENG] 21:13 Jesus came and took the bread and gave it to them, and did the same with the fish.
+[INA] 21:3 Simon Petro les dice: Io vade piscar.
+
+[ENG] 21:14 This was now the third time Jesus was revealed to the disciples after he was raised from the dead.
+[INA] 21:4 Ma quando le hora matutin deveniva, Jesus se poneva se in le plagia; ma le discipulos no sapeva que era Jesus.
+
+[ENG] 21:22 Jesus replied, “If I want him to live until I come back, what concern is that of yours?
+[INA] 21:22 Jesus le dice: Si Io vole que ille permane usque Io venira, que a te? Tu, seque! me.
+
+[ENG] 21:24 This is the disciple who testifies about these things and has written these things, and we know that his testimony is true.
+[INA] 21:24 Iste es le discipulo que testifica circa iste cosas e ille que scribeva iste cosas e nos sape que su testimonio es ver.
+
+[ENG] 21:25 There are many other things that Jesus did.
+[INA] 21:25 E etiam son multe altere cosas que faceva Jesus, le quales si esserea scripte, une per une, io suppone que le mundo no habera spatio pro le libros scribite.
+
