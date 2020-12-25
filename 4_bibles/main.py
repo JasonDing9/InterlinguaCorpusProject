@@ -1336,7 +1336,7 @@ def parallel_sentences_extractor(save_dir, save_name, pair_dir, pair_list, IA_fi
 model = fasttext.load_model("8_lang_50k_model.bin")
 if __name__ == "__main__":
 
-    list = ["John","Luke","Mark","Matthew"]
+    list = ["John"]
     parallel_sentences_extractor("4_books_parallel_sentences","4_books","Gospels_reformatted",list,"IA_v2")
 
     # start = time.time()
