@@ -17,6 +17,15 @@ Please email interlinguacorpus@gmail.com for questions and suggestions.
 
 The main Python file to run is main.py. There are files missing such as a language model, but there is explanations for each functions. In order to use the web crawler, use the function crawler. In order to use the parallel sentence extracter, use the function parallel_sentences_extractor. For examples on how to start each script, look in the crawler folder for an example of the web crawler and 4_bibles for an example of the parallel_setences_extractor.
 
+The text files needed for the crawler are:<br />
+failedWebsites.txt<br />
+link_dict.txt<br />
+link_queue.txt<br />
+sentencesINA.txt<br />
+sentencesNonINA.txt<br />
+traversed_links.txt<br />
+traversed_titles.txt<br />
+
 Note: The language model 8_lang_50k_model.bin is not included.
 
 The other notable python files are:
